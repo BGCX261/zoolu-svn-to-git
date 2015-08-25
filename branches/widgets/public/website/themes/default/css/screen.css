@@ -1,0 +1,625 @@
+/**
+ * Screen
+ *
+ * @author Cornelius Hansjakob <cha@massiveart.com>
+ * @version 1.0
+ */
+
+
+/* ----------------
+Reset */
+@import url(reset.css);
+
+/* ----------------
+Main */
+
+body {
+  background-color:#fff;
+  color:#000;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size:12px;
+  line-height:1.3em;
+  position:relative;
+  text-align:center;
+}
+
+p {
+  padding-bottom:1.3em;
+}
+
+.clear {
+  clear:both;
+  height:0;
+  line-height:0;
+  font-size:0;
+}
+
+.wrapper {
+  text-align:center;
+  width:100%;
+}
+
+.subwrapper {
+  margin:0 auto;
+  width:940px;
+  text-align:left;
+}
+
+.inner {
+  position:relative;
+  height:100%;
+}
+
+.header {
+  background-color:#fff;
+  height:100px;
+}
+
+.nav {
+  background-color:#333;
+  color:#fff;
+  height:40px;  
+}
+
+.top {
+  background-color:#ccc;
+}
+
+.content {
+  background-color:#fff;
+}
+
+.footer {
+  background-color:#d6d6d6;
+  height:30px;
+}
+
+/* ----------------
+Headlines */
+
+h1 {
+  font-size:24px;
+  line-height:1.5em;
+  font-weight:bold;
+}
+
+h2 {
+  font-size:18px;
+  line-height:1.5em;
+  font-weight:bold;
+}
+
+h3 {
+  font-size:14px;
+  line-height:1.3em;
+  font-weight:bold;
+  padding:0 0 1.3em 0;
+}
+
+h4 {
+
+}
+
+/* ----------------
+Header */
+
+.divLogo {
+  position:absolute;
+  font-size:36px;
+  font-weight:bold;
+  top:35px;
+  left:0;  
+}
+
+.divSlogan {
+  position:absolute;
+  font-size:14px;
+  top:60px;
+  left:120px;
+}
+
+.divLangs {
+  position:absolute;
+  font-size:12px;
+  font-weight:bold;
+  top:40px;
+  right:240px;
+  text-align:right;
+}
+
+.divLangs ul {
+
+}
+
+.divLangs li {
+  display:inline;
+  padding-right:1em;
+}
+
+.divLangs li:last-child {
+  padding-right:0;
+}
+
+.divLangs li a {
+  color:#333;
+  text-decoration:none;
+}
+
+.divLangs li a:hover {
+  color:#333;
+  text-decoration:underline;
+}
+
+.divSearch {
+  position:absolute;
+  top:40px;
+  right:0;
+  width:220px;
+}
+
+.divSearch input {
+  width:210px;
+  font-size:12px;
+  line-height:16px;
+  background-color:#000;
+  color:#fff;
+  border:medium none;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+/* ----------------
+Navigation */
+
+.nav ul {
+  padding:10px 0 0 0;  
+}
+
+.nav li {
+  display:inline;
+  font-size:14px;
+  margin-right:2em;
+  padding-right:2em;
+}
+
+.nav li:last-child {  
+  margin-right:0;
+  padding-right:0;
+}
+
+.nav li a {
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.nav li a:hover {
+  color:#fff;
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+/* ----------------
+Sub Navigation */
+
+.divSubNavContainer {
+  float:left;
+  width:220px;
+  padding:0 20px 0 0;
+}
+
+.divSubNavContainer ul {
+  
+} 
+
+.divSubNavContainer	li {
+
+}
+
+.divSubNavContainer li ul {
+  padding:0 0 0 20px;
+}
+
+
+/* ----------------
+Top Content Startpage */
+
+.top .start {
+  margin:0 0 20px 0;
+  padding:20px 0 20px 0;
+}
+
+/* ----------------
+Content */
+
+.content .overview,
+.content .detail {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.overview .divContentContainer {
+  float:left;
+  width:700px;
+}
+
+.detail .divContentContainer {
+  float:left;
+  width:460px;
+  padding:0 20px 0 0;
+}
+
+.divContentIntro {
+  padding:0 0 20px 0;
+}
+
+.divContentOverview {
+  float:left;
+  width:460px;
+  padding:0 10px 0 0;
+  margin:0 9px 0 0;
+  border-right:1px solid #d6d6d6;
+}
+
+.overview .divContentSidebar,
+.detail .divContentSidebar {
+  float:left;
+  width:220px;
+}
+
+.detail .divContentSidebar {
+  padding-top:12px;
+}
+
+.divContentContainer .divImgLeft {
+  padding:0 10px 5px 0;
+}
+
+.divContentItem {
+  padding:0 0 20px 0;
+  margin: 0 0 20px 0;
+  border-bottom:1px solid #d6d6d6;
+}
+
+.divContentItem .divImgLeft {
+  padding:0 10px 5px 0;
+}
+
+.divContentItem .divImgRight {
+  padding:0 0 5px 10px;
+}
+
+.overview .divColContainer {
+  padding:0 0 20px 0;
+  margin: 0 0 20px 0;
+  border-bottom:1px solid #d6d6d6;
+}
+
+.overview .divColItem {
+  padding-bottom:10px;
+  width:220px;
+}
+
+.overview .divColItem .divImgLeft {
+  padding:0 10px  5px 0;
+}
+
+.overview .divListContainer {
+  padding:0 0 20px 0;
+}
+
+.overview .divListItemImg {
+  padding:0 0 10px 0;
+}
+
+.overview .divListItemImg .divListItemImgLeft {
+  float:left;
+  padding:0 10px 0 0;  
+}
+
+.overview .divListItemImg .divListItemImgRight {
+  float:left;
+}
+
+.overview .divListItem {
+  padding:0 0 10px 0;
+}
+
+.overview .divListItem .divListItemTitle {
+
+}
+
+/* ----------------
+Content Gallery */
+
+
+.divImageGallery {
+  padding:0 0 20px 0;
+}
+
+.divGallery {
+
+}
+
+.divGalleryItem {
+  float:left;
+  width:80px;
+  height:80px;
+  overflow:hidden;
+  padding:0 20px 20px 0;
+}
+
+/* ----------------
+Content Documents */
+
+.divDocuments {
+  padding:0 0 20px 0;
+}
+
+.divDocItem {
+  padding:0 0 10px 0;
+}
+
+.divDocIcon {
+  float:left;
+  width:32px;
+  padding-right:20px;
+}
+
+.divDocInfos {
+  float:left;
+}
+
+
+/* ----------------
+Content Contact */
+
+.divContactContainer {
+  
+}
+
+.divContactPerson { 
+  padding:0 0 20px 0;
+}
+
+.divContactPerson .divContactName {
+
+}
+	
+.divContactPerson .divContactFunc {
+  font-size:12px;
+  line-height:1.3em;
+}
+
+.divContactPerson .divContactDetail {
+  padding:5px 0 0 0;
+}
+
+.divContactDetail .divContactImg {
+  float:left;
+  width:40px;
+  padding:0 10px 0 0;
+}
+
+.divContactDetail .divContactInfos {
+  font-size:12px;
+  line-height:1.3em;
+  float:left;
+}
+
+
+/* ----------------
+Content Startpage */
+
+.col2 {
+  width:460px;
+  float:left;
+}
+
+.col3 {
+  width:300px;
+  float:left;
+}
+
+.divTopPost {
+  padding:0 0 20px 0;
+}
+
+.start .divImgLeft {
+  padding:0 10px 5px 0;
+}
+
+.start .divImgRight {
+  padding:0 0 5px 10px;
+}
+
+.divListContainer {
+ 
+}
+	
+.start .divListItemImg {
+  padding:0 0 20px 0;
+}
+
+.start .divListItemImg .divListItemImgLeft {
+  float:left;
+  width:40px;
+  padding:0 10px 0 0;
+}
+
+.start .divListItemImg .divListItemImgRight {
+  float:left;
+  width:250px;
+}
+
+/* ----------------
+Image Definitions */
+
+.divImgLeft {
+  float:left;
+}
+
+.divImgRight {
+  float:right;
+}
+
+/* ----------------
+Footer */
+
+.footer .inner {
+  padding:8px 0 0 0;
+  font-size:12px;
+  line-height:1.3em;
+}
+
+.divFooterLeft {
+  float:left;
+}
+
+.divFooterRight {
+  float:right;
+}
+
+.divFooterRight ul {
+
+}
+
+.divFooterRight li {
+  display:inline;
+  padding-left:1em;
+}
+
+/* ----------------
+Font Weight */
+
+.bold {
+  font-weight:bold;
+}
+
+.normal {
+  font-weight:normal;
+}
+
+.lighter {
+  font-weight:lighter;
+}
+
+.bolder {
+  font-weight:bolder;
+}
+
+/* ----------------
+Colors */
+
+.black {
+  color:#000;
+}
+
+.white {
+  color:#fff;
+}
+
+/* ----------------
+Paddings */
+
+.ptop10 {
+  padding-top:10px;
+}
+
+.ptop20 {
+  padding-top:20px;
+}
+
+.pbottom10 {
+  padding-bottom:10px;
+}
+
+.pbottom20 {
+  padding-bottom:20px;
+}
+
+.pleft10 {
+  padding-left:10px;
+}
+
+.pleft20 {
+  padding-left:20px;
+}
+
+.pright10 {
+  padding-right:10px;
+}
+
+.pright20 {
+  padding-right:20px;
+}
+
+/* ----------------
+Margins */
+
+.mtop10 {
+  margin-top:10px;
+}
+
+.mtop20 {
+  margin-top:20px;
+}
+
+.mbottom10 {
+  margin-bottom:10px;
+}
+
+.mbottom20 {
+  margin-bottom:20px;
+}
+
+.mleft10 {
+  margin-left:10px;
+}
+
+.mleft20 {
+  margin-left:20px;
+}
+
+.mright10 {
+  margin-right:10px;
+}
+
+.mright20 {
+  margin-right:20px;
+}
+
+/* ----------------
+Floats */
+
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
+/* ----------------
+Grid */
+
+#divGrid12 {
+  position:absolute;
+  width:940px;
+  height:100%;
+  z-index:1000;
+  top:0;
+  left:50%;
+  margin:0 0 0 -470px;
+}
+
+.grid {
+  position:absolute;
+  z-index:1000;
+  top:0;
+  background:url(/website/themes/default/images/tmp/grid.png) 0 0;
+  bottom:0;
+  width:60px;
+  height:100%;
+}
+

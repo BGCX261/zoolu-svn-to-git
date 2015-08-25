@@ -1,0 +1,35 @@
+<?php 
+require_once(dirname(__FILE__).'/../../helpers/NavigationHelper.php');
+$objHelper = new NavigationHelper();
+?>            
+            <div id="level<?php echo $this->currLevel; ?>" class="navlevelinner" onmouseover="myNavigation.toggleAddMenuIcon(<?php echo $this->currLevel; ?>,'show');return false;" onmouseout="myNavigation.toggleAddMenuIcon(<?php echo $this->currLevel; ?>,'hide'); return false;">
+              <div id="widgetproperties" class="startpage">
+                <div class="icon img_startpage_on"></div>
+                <div class="title" onclick="myNavigation.getWidgetPropertiesForm('<?php echo $this->widgetName; ?>', <?php echo $this->idWidgetInstance; ?>); return false;">Blog-Einstellungen</div>
+              </div>
+              <div class="linegray"></div>
+              <?php echo $objHelper->getNavigationElements($this->childElements, $this->currLevel, $this->widgetName); ?>
+            </div>
+            
+            <div id="levelmenu<?php echo $this->currLevel; ?>" class="levelmenu" style="display:none;" onclick="myNavigation.showAddMenu(<?php echo $this->currLevel; ?>); return false;" onmouseover="myNavigation.toggleAddMenuIcon(<?php echo $this->currLevel; ?>,'show');return false;">
+              <div><img src="/zoolu/images/icons/icon_add.png" width="16" height="16"/></div>
+            </div>
+            
+            <div id="addmenu<?php echo $this->currLevel; ?>" class="addmenu" style="display:none;">
+              <div class="addmenutopleft"></div>
+              <div class="addmenutopright"></div>
+              <div class="clear"></div>
+              <div class="addmenucontent">
+                <!-- <div class="addmenuelement" onclick="myNavigation.addStartPage(<?php echo $this->currLevel; ?>); return false;">
+                  <img class="icon" src="/zoolu/images/icons/icon_document_new.png" width="16" height="16"/>
+                  <div class="small white">Neue Startseite</div>
+                  <div class="clear"></div>
+                </div> -->
+                <div class="addmenuelement" onclick="myNavigation.addSubWidgetForm('<?php echo $this->widgetName; ?>', <?php echo $this->currLevel; ?>, '<?php echo $this->widgetInstanceId; ?>'); return false;">
+                  <img class="icon" src="/zoolu/images/icons/icon_document_new.png" width="16" height="16"/>
+                  <div class="small white">Neuer Eintrag</div>
+                  <div class="clear"></div>
+                </div>
+      
+              </div>              
+            </div>           

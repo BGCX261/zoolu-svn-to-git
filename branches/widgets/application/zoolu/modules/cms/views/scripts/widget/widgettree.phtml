@@ -1,0 +1,11 @@
+<?php
+  require_once (dirname(__FILE__).'/../../helpers/WidgetHelper.php');
+  $objHelper = new WidgetHelper();
+?> 
+
+<div class="oltitle"><?php echo $this->overlaytitle; ?></div>
+<div class="spacer1"></div>
+<div class="olnavigationwrapper2">
+  <?php echo $objHelper->getWidgetTree($this->elements, $this->parentId, $this->parentType, $this->currLevel); ?>
+</div>
+<div class="spacer1 clear"></div>

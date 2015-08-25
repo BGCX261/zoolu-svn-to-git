@@ -1,0 +1,26 @@
+<?php
+
+  require_once (dirname(__FILE__).'/../../helpers/ViewHelper.php');
+  $objHelper = new ViewHelper();
+
+?>
+<div class="oltitle">Medien bearbeiten</div>
+<div class="spacer1"></div>
+<form id="editForm" name="editForm" method="post" action="<?php echo $this->strEditFormAction; ?>" onsubmit="return false;">
+  <div id="overlayMediaWrapper" class="mediawrapper">
+	  <?php echo $objHelper->getEditForm($this->objFiles); ?>
+	  <input type="hidden" name="EditFileIds" id="EditFileIds" value="<?php echo $this->strFileIds; ?>"/>
+  </div>
+  <div class="clear"></div>
+  <div class="buttoncancel" onclick="$('overlayGenContentWrapper').hide(); $('overlayBlack75').hide(); return false;">Abbrechen</div>  
+  <div onclick="myMedia.editFiles();" id="buttoneditsave">
+    <div class="button25leftOn"></div>
+    <div class="button25centerOn">
+      <img width="13" height="13" src="/zoolu/images/icons/icon_save_black.png" class="iconsave"/>
+      <div>Speichern</div>
+    </div>
+    <div class="button25rightOn"></div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</form>

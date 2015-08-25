@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configdata>
+
+  <!--
+  ***********************************************************
+    Levels to define the logger priority - field: <priority>
+  ***********************************************************
+    EMERG   = 0;  Emergency: system is unusable
+    ALERT   = 1;  Alert: action must be taken immediately
+    CRIT    = 2;  Critical: critical conditions
+    ERR     = 3;  Error: error conditions
+    WARN    = 4;  Warning: warning conditions
+    NOTICE  = 5;  Notice: normal but significant condition
+    INFO    = 6;  Informational: informational messages
+    DEBUG   = 7;  Debug: debug messages
+  ***********************************************************
+  -->
+
+  <!--
+  ***********************************************************
+  * config for online evnironment                           *
+  ***********************************************************
+  -->
+  <production>
+    <!-- STANDARD -->
+    <client>dev</client>
+    <language>de</language>
+    <location>de_AT</location>
+    
+    <!-- LANGUAGES -->
+    <languages>
+      <default>
+        <id>1</id>
+        <code>de</code>
+      </default>
+    </languages>
+    
+    <!-- VERSION -->
+    <version>
+      <js>1.0</js>
+      <css>1.0</css>
+    </version>
+    
+    <!-- PATHES -->
+    <path>
+      <session>tmp/sessions/</session>
+      <search_index>
+        <page>tmp/search_index/pages</page>
+      </search_index>      
+      <zoolu_modules>application/zoolu/modules/</zoolu_modules>   
+      <zoolu_widgets>application/widgets/</zoolu_widgets>
+      <zoolu_website>application/website/</zoolu_website>
+      <zoolu_public>public/</zoolu_public>
+    </path>
+    
+    <!-- LOGGER / DEBUGGING -->
+    <show_errors>false</show_errors>
+    <logger>
+      <priority>3</priority>
+      <path>logs/</path>
+      <firebug>false</firebug>
+    </logger>
+    
+    <!-- CACHE -->
+    <cache>
+      <page>false</page>
+      <generic_form_structure>true</generic_form_structure>
+    </cache>
+    
+    <!-- DATABASE -->
+    <database>
+      <adapter>Pdo_Mysql</adapter>
+      <params>
+        <host>localhost</host>
+        <username>zoolu</username>
+        <password>zoolu</password>
+        <dbname>zoolu</dbname>
+      </params>
+    </database>
+    
+    <!-- ENCODING -->
+    <encoding>
+      <default>UTF-8</default>
+      <ajax>UTF-8</ajax>
+      <db>UTF8</db>
+    </encoding>
+    
+    <!-- GENERIC -->
+    <generic>
+      <!-- table: actions -->
+      <actions>
+        <add>1</add>
+        <edit>2</edit>
+        <change_template>3</change_template>
+        <change_template_id>4</change_template_id>
+      </actions>
+    </generic>
+    
+    <!-- FORM -->
+    <form>      
+      <ids>
+        <!-- default genericFormIds for folders / table: genericForms -->
+        <folders>
+          <default>DEFAULT_FOLDER</default>
+          <blog>BLOG_FOLDER</blog>
+        </folders>
+        <!-- default genericFormIds for pages / table: genericForms -->        
+        <pages>          
+          <tmp1>DEFAULT_PAGE_1</tmp1>
+          <overview>DEFAULT_OVERVIEW</overview>
+        </pages>
+        <categories>
+          <default>DEFAULT_CATEGORY</default>
+        </categories>
+        <units>
+          <default>DEFAULT_UNIT</default>
+        </units>
+        <contacts>
+          <default>DEFAULT_CONTACT</default>
+        </contacts>
+        <events>
+          <default>DEFAULT_EVENT</default>
+          <overview>DEFAULT_EVENT_OVERVIEW</overview>
+        </events>
+      </ids>
+      <!-- GENERIC FORM TYPES -->
+      <!-- table: genericFormTypes -->
+      <types>
+        <folder>1</folder>
+        <page>2</page>
+        <category>3</category>
+        <unit>4</unit>
+        <contact>5</contact>
+      </types>
+      <!-- default status for folder/page creation(1...Test, 2...Published, 3...Approval) -->
+      <!-- table: status -->
+      <status>
+       <default>1</default>
+      </status>
+    </form>
+    
+    <!-- FIELDS -->
+    <fields>
+      <properties>
+        <url_field>1</url_field>
+      </properties>
+    </fields>
+        
+    <!-- VIEW TYPES -->
+    <viewtypes>
+      <thumb>1</thumb>
+      <list>2</list>
+    </viewtypes>
+    
+    <!-- UPLOAD -->
+    <upload>      
+      <!-- maximum filesize -->      
+      <max_filesize>15728640</max_filesize> <!-- 15 MB (1024*1024*15) for each upload media -->      
+      <!-- excluded extensions -->        
+      <excluded_extensions>
+        <extension>com</extension>
+        <extension>exe</extension>
+        <extension>msi</extension>
+        <extension>dif</extension>
+        <extension>inf</extension>
+        <extension>mdb</extension>
+        <extension>js</extension>
+        <extension>jse</extension>
+        <extension>reg</extension>
+        <extension>vbe</extension>
+        <extension>vbs</extension>
+        <extension>bat</extension>
+        <extension>pif</extension>
+        <extension>sh</extension>
+        <extension>pl</extension>
+        <extension>scr</extension>
+      </excluded_extensions>
+        
+      <!-- IMAGES -->
+      <images>
+        <!-- Adapter (Gd2, Imagick) -->
+        <adapter>Imagick</adapter>
+        <!-- Save destination (local, s3) -->
+        <destination>local</destination>
+        
+        <!-- upload pathes -->
+        <path>
+          <local>
+            <private>uploads/images/</private>
+            <public>public/website/uploads/images/</public>
+          </local>
+          <s3>
+            <private>private/images/</private>
+            <public>public/images/</public>
+          </s3>
+        </path>
+        
+        <!-- maximum filesize -->      
+        <max_filesize>15728640</max_filesize> <!-- 15 MB (1024*1024*15) for each Image -->
+        <!-- excluded extensions -->        
+        <excluded_extensions>
+          <extension>exe</extension>
+        </excluded_extensions>
+        <default_sizes>
+          <!-- OLD 
+          <default_size>
+            <size>32</size>
+            <mode>SquareCrop</mode>
+            <folder>icon32</folder>
+            <compression>85</compression>
+            <watermark>false</watermark>
+          </default_size>
+          <default_size>
+            <size>200</size>
+            <mode>PropX</mode>
+            <folder>thumb</folder>
+            <compression>90</compression>
+            <watermark>false</watermark>
+          </default_size>
+          <default_size>
+            <size>660</size>
+            <mode>PropX</mode>
+            <folder>660x</folder>
+            <compression>90</compression>
+            <watermark>false</watermark>
+          </default_size>
+          <default_size>
+            <size>420</size>
+            <mode>PropX</mode>
+            <folder>420x</folder>
+            <compression>90</compression>
+            <watermark>false</watermark>
+          </default_size>
+          <default_size>
+            <size>180</size>
+            <mode>PropX</mode>
+            <folder>180x</folder>
+            <compression>90</compression>
+            <watermark>false</watermark>
+          </default_size>
+          <default_size>
+            <size>80</size>
+            <mode>SquareCrop</mode>
+            <folder>80x80</folder>
+            <compression>90</compression>
+            <watermark>false</watermark>
+          </default_size>
+          <default_size>
+            <size>40</size>
+            <mode>SquareCrop</mode>
+            <folder>40x40</folder>
+            <compression>90</compression>
+            <watermark>false</watermark>
+          </default_size>  -->
+          
+          <!-- NEW -->
+          <default_size>
+            <folder>icon32</folder>
+            <actions>
+	            <action>
+	              <method>scale</method>
+	              <params>32,32</params>
+	            </action>	            
+            </actions>                        
+          </default_size>
+          <default_size>
+            <folder>thumb</folder>
+            <actions>
+              <action>
+                <method>resize</method>
+                <params>200</params>
+              </action>             
+            </actions>                        
+          </default_size>
+          <!--<default_size>
+            <folder>290x150</folder>
+            <actions>
+              <action>
+                <method>scale</method>
+                <params>290,150</params>
+              </action>
+              <action>
+                <method>roundCorners</method>
+              </action>
+              <action>
+                <method>shadow</method>
+              </action>
+            </actions>                        
+          </default_size>
+          <default_size>
+            <folder>400x640</folder>
+            <actions>
+              <action>
+                <method>scale</method>
+                <params>400,640</params>
+              </action>
+            </actions>                        
+          </default_size> -->
+          <default_size>
+            <folder>660x</folder>
+            <actions>
+              <action>
+                <method>resize</method>
+                <params>660</params>
+              </action>
+            </actions>                        
+          </default_size>
+          <default_size>
+            <folder>420x</folder>
+            <actions>
+              <action>
+                <method>resize</method>
+                <params>420</params>
+              </action>
+            </actions>                        
+          </default_size>
+          <default_size>
+            <folder>220x</folder>
+            <actions>
+              <action>
+                <method>resize</method>
+                <params>220</params>
+              </action>
+            </actions>                        
+          </default_size>
+          <default_size>
+            <folder>180x</folder>
+            <actions>
+              <action>
+                <method>resize</method>
+                <params>180</params>
+              </action>
+            </actions>                        
+          </default_size>          
+          <default_size>
+            <folder>80x80</folder>
+            <actions>
+              <action>
+                <method>scale</method>
+                <params>80,80</params>
+              </action>             
+            </actions>                        
+          </default_size>
+          <default_size>
+            <folder>40x40</folder>
+            <actions>
+              <action>
+                <method>scale</method>
+                <params>40,40</params>
+              </action>             
+            </actions>                        
+          </default_size>          
+        </default_sizes>
+      </images>
+      
+      <!-- DOCS -->
+      <documents>
+        <!-- Save destination (local, S3) -->
+        <destination>local</destination>
+        
+        <!-- upload pathes -->
+        <path>
+          <local>
+            <private>uploads/documents/</private>
+            <public>public/website/uploads/documents/</public>
+          </local>
+          <s3>
+            <private>private/documents/</private>
+            <public>public/documents/</public>
+          </s3>
+        </path>
+        <!-- excluded extensions -->        
+        <excluded_extensions>
+          <extension>exe</extension>
+        </excluded_extensions>
+        <!-- maximum filesize -->      
+        <max_filesize>15728640</max_filesize> <!-- 15 MB (1024*1024*15) for each file -->
+      </documents>
+    </upload>
+    
+    <!-- MEDIA OUTPUT PATHS -->
+    <media>
+      <paths>
+        <docbase>/website/uploads/documents/</docbase>
+        <imgbase>/website/uploads/images/</imgbase>
+        <thumb>/website/uploads/images/thumb/</thumb>
+        <icon32>/website/uploads/images/icon32/</icon32>
+      </paths>
+    </media>
+    
+    <!-- PARENT TYPES -->
+    <!-- table: parentTypes -->
+    <parent_types>
+      <rootlevel>1</rootlevel>
+      <folder>2</folder>
+      <widget>3</widget>
+    </parent_types>
+    
+    <!-- MODULES -->
+    <!-- table: modules -->
+    <modules>
+      <cms>1</cms>
+      <media>2</media>
+      <properties>3</properties>
+    </modules>
+    
+    <!-- ROOTLEVEL TYPES -->
+    <!-- table: rootLevelTypes -->
+    <root_level_types>
+      <portals>1</portals>
+      <images>2</images>
+      <documents>3</documents>
+      <categories>4</categories>
+      <contacts>5</contacts>
+      <labels>6</labels>
+      <systeminternals>7</systeminternals>
+    </root_level_types>
+    
+    <!-- FOLDER TYPES -->
+    <!-- table: folderTypes -->
+    <folder_types>
+      <folder>1</folder>
+      <blog>2</blog>
+    </folder_types>
+    
+    <!-- PAGE TYPES -->
+    <!-- table: pageTypes -->
+    <page_types>
+      <page>
+        <id>1</id>
+        <default_formId>DEFAULT_PAGE_1</default_formId>
+        <default_templateId>1</default_templateId>
+        <startpage_formId>DEFAULT_PAGE_1</startpage_formId>
+        <startpage_templateId>2</startpage_templateId>
+        <portal_startpage_formId>DEFAULT_STARTPAGE</portal_startpage_formId>
+        <portal_startpage_templateId>3</portal_startpage_templateId>
+        <event_formId>DEFAULT_EVENT</event_formId>
+        <event_templateId>7</event_templateId>
+      </page>
+      <link>
+        <id>2</id>
+        <default_formId>DEFAULT_LINKING</default_formId>
+      </link>
+      <overview>
+        <id>3</id>
+        <default_formId>DEFAULT_OVERVIEW</default_formId>        
+        <default_templateId>4</default_templateId>
+        <event_formId>DEFAULT_EVENT_OVERVIEW</event_formId>
+        <event_templateId>8</event_templateId>
+      </overview>
+      <external>
+        <id>4</id>
+        <default_formId>DEFAULT_EXTERNAL</default_formId>
+      </external>
+      <process>
+        <id>5</id>
+        <default_formId>DEFAULT_PROCESS</default_formId>
+      </process>
+    </page_types>
+    
+    <!-- REGION TYPES -->
+    <!-- table: regionTypes -->
+    <region_types>
+      <content>1</content>
+      <config>2</config>
+    </region_types>
+    
+    <!-- CATEGORY TYPES -->
+    <!-- table: categoryTypes -->
+    <category_types>
+      <default>1</default>
+      <system>2</system>
+      <label>3</label>
+    </category_types>
+    
+    <!-- TYPES -->
+    <!-- table: types -->
+    <types>
+      <startpage>1</startpage>
+      <page>2</page>
+      <overview>3</overview>
+      <portal_startpage>4</portal_startpage>
+    </types>
+    
+    <!-- URLTYPES -->
+    <!-- table: urltypes -->
+    <url_types>
+    	<page>1</page>
+    	<widget>2</widget>
+    	<subwidget>3</subwidget>
+    </url_types>
+    
+    <!-- table: categories / idRootCategory=11, idCategoryTypes=2 -->
+    <sort>
+      <!-- sorttypes -->
+      <types>
+        <alpha>
+          <id>16</id>
+          <matchcode>alpha</matchcode>
+        </alpha>
+        <manual_sort>
+          <id>17</id>
+          <matchcode>sort</matchcode>
+        </manual_sort>
+        <created>
+          <id>18</id>
+          <matchcode>created</matchcode>
+        </created>
+        <changed>
+          <id>19</id>
+          <matchcode>changed</matchcode>
+        </changed>
+        <published>
+          <id>40</id>
+          <matchcode>published</matchcode>
+        </published>  
+      </types>
+      <!-- sortorders -->
+      <orders>
+        <asc>
+          <id>15</id>
+          <matchcode>ASC</matchcode>
+        </asc>
+        <desc>
+          <id>14</id>
+          <matchcode>DESC</matchcode>
+        </desc>   
+      </orders>
+    </sort>
+    <filter>
+      <depth>
+        <first>65</first>
+        <all>66</all>
+      </depth>
+    </filter>
+    
+    <!-- STATUS -->
+    <status>
+      <test>1</test>
+      <live>2</live>
+      <approval>3</approval> 
+    </status>
+    
+    <!-- VIDEO CHANNELS -->
+    <video_channels>
+      <vimeo>
+        <id>1</id>
+        <users>
+          <user>
+            <id>zcope</id>
+            <name>ZCOPE</name>
+          </user>
+          <user>
+            <id>massiveart</id>
+            <name>Massive Art</name>
+          </user>
+        </users>
+      </vimeo>
+      <youtube>
+      	<id>2</id>
+				<users>
+      		<user>
+      			<id>GoogleDevelopers</id>
+      			<name>GoogleDevelopers</name>
+      		</user>
+      	</users>
+      </youtube>
+    </video_channels>
+    
+  	<!-- Application Keys -->
+  	<key>
+    	<gmaps>ABQIAAAAYd6HpKB1Vfqec8cb_5YrlhRtA2_S2kiI47KJ4sJy_X22ETSKqBTcMnbqrvhiPT2Y5ziNW3jseAb6Ig</gmaps>
+  	</key>
+  </production>
+
+  <!--
+  ***********************************************************
+  * config for developement evnironment                     *
+  ***********************************************************
+  -->
+  <staging extends="production">
+    <!-- LOGGER / DEBUGGING -->
+    <show_errors>true</show_errors>
+    <logger>
+      <priority>7</priority>     
+      <firebug>true</firebug>
+    </logger>
+    
+    <!-- CACHE -->
+    <cache>
+      <page>false</page>
+      <generic_form_structure>false</generic_form_structure>
+    </cache>
+  </staging>
+
+</configdata>

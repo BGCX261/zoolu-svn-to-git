@@ -1,0 +1,1235 @@
+/**
+ * Core Content
+ *
+ * @author Cornelius Hansjakob <cha@massiveart.com>
+ * @version 1.0
+ */
+
+
+/* ----------------
+Basics */
+
+.contentedit {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:10px;
+  right:271px;
+  overflow:hidden;
+  overflow-y:scroll;
+  padding-right:40px;
+}
+
+/* only IE7 */
+*:first-child+html .contentedit { 
+  padding-right:50px;
+}
+
+.contentfunction {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:270px;
+  right:0;
+  background-color:#e4e4e4;
+  border-left:1px solid #666;
+}
+
+.itemremovethumb {
+  background:url(/zoolu/images/icons/icon_remove.png) no-repeat 0 0;
+  position:absolute; 
+  bottom:0; 
+  left:0; 
+  width:20px; 
+  height:20px;
+  cursor:pointer; 
+}
+
+.itemremovelist {
+  background:url(/zoolu/images/icons/icon_close.png) no-repeat 0 0;
+  width:11px; 
+  height:11px;
+  cursor:pointer;
+  float:left;
+  margin:11px 10px 0 0;
+  display:inline;  
+}
+
+.itemadd {
+  background:url(/zoolu/images/icons/icon_add_2.png) no-repeat 0 0;
+  position:absolute; 
+  bottom:0; 
+  left:0; 
+  width:20px; 
+  height:20px;
+  cursor:pointer; 
+}
+
+/* ----------------
+Boxes Grid */
+
+.box-full,
+.box-12 {
+  width:100%;
+  clear:both;
+}
+
+.box-half,
+.box-6 {
+  width:50%;
+  float:left;
+}
+
+.box-threequarter,
+.box-9 {
+  width:75%;
+  float:left;
+}
+
+.box-quarter,
+.box-3 {
+  width:25%;
+  float:left;
+}
+
+.box-twothirds,
+.box-8 {
+  width:66.67%;
+  float:left;
+}
+
+.box-third,
+.box-4 {
+  width:33.33%;
+  float:left;
+}
+
+/* ----------------
+Fields Grid */
+
+.field-full,
+.field-12 {
+  width:100%;
+  clear:both;
+}
+
+.field-half,
+.field-6 {
+  width:50%;
+  float:left;
+}
+
+.field-threequarter,
+.field-9 {
+  width:75%;
+  float:left;
+}
+
+.field-quarter,
+.field-3 {
+  width:25%;
+  float:left;
+}
+
+.field-twothirds,
+.field-8 {
+  width:66.67%;
+  float:left;
+}
+
+.field-third,
+.field-4 {
+  width:33.33%;
+  float:left;
+}
+
+/* ----------------
+Edit Mask */
+
+.pagepreviewcontainer {
+  position:absolute; 
+  top:0; 
+  left:0;
+  z-index:300;
+}
+
+.pagepreviewleft,
+.pagepreviewright {
+  background:url(/zoolu/images/main/bg_page_preview_left.png) no-repeat 0 0; 
+  width:5px; 
+  height:20px; 
+  float:left;
+}
+
+.pagepreviewright {
+  background:url(/zoolu/images/main/bg_page_preview_right.png) no-repeat 0 0;
+}
+
+.pagepreviewcenter {
+  background-color:#754480; 
+  height:19px; 
+  float:left; 
+  padding:1px 5px 0 0;
+  cursor:pointer;
+}
+
+.pagepreviewcenter img {
+  margin:0 5px 4px 0; 
+  vertical-align:bottom;
+}
+
+.pagelanguagecontainer{
+  position:absolute; 
+  top:10px; 
+  right:40px; 
+  z-index:300;
+}
+
+.formtitle,
+.formsubtitle {
+  padding-top:30px;
+  padding-bottom:20px;
+  padding-left:20px;
+}
+
+.formsubtitle {
+  padding-left:10px;
+}
+
+.editbox,
+.editbox-closed {  
+  background-color: #fff;
+  overflow: hidden; 
+  margin-bottom:20px; 
+  margin-right:10px;
+}
+
+.editbox-closed {  
+  background-color: #e4e4e4;
+}
+
+.configbox {  
+  background-color: #e4e4e4;
+}
+
+.configbox-closed {
+  background-color:#aaa;
+} 
+
+.editboxtitlecontainer {  
+  height:20px;
+  background-color:#e4e4e4;
+}
+
+.configbox .editboxtitlecontainer,
+.configbox-closed .editboxtitlecontainer {  
+  background-color:#aaa;
+}
+
+.editbox .editboxtitle {  
+  padding-top:2px;
+  padding-left:10px;
+  float:left;
+  width:43%;
+  overflow:hidden; 
+}
+
+.editbox-closed .editboxtitle {
+  padding-left:10px;
+  padding-top:4px;
+  float:left;
+  width:43%;
+  overflow:hidden;
+}
+
+.absoluteright .editbox .editboxtitle, 
+.absoluteright .editbox-closed .editboxtitle {
+  width:auto;
+}
+
+/* only IE7 */
+*:first-child+html .editboxtitle { 
+  padding-left:10px;
+}
+
+.editboxfields {  
+  padding:20px 0 0 20px;   
+}
+
+.editboxdrag {
+  background: url(/zoolu/images/buttons/grid_sort_list.png) no-repeat 0 0;
+  cursor:move;
+  float:left;
+  width:49px;
+  height:10px;
+  margin:5px 0 0 0;
+}
+
+.editbox-closed .editboxdrag {
+  margin:7px 0 0 0;
+}
+
+.editboxmultiplycontainer {
+  float:right;
+  padding:2px 10px 0 0;
+}
+
+.editbox-closed .editboxmultiplycontainer {
+  padding:4px 10px 0 0;
+} 
+
+.editboxmultiplyminus {
+  background: url(/zoolu/images/buttons/button_list_remove.png) no-repeat 0 0;
+  float:left;
+  width:17px;
+  height:16px;
+  margin:0 5px 0 0;
+  cursor:pointer;
+}
+
+.editboxmultiplyplus {
+  background: url(/zoolu/images/buttons/button_list_add.png) no-repeat 0 0;
+  float:left;
+  width:17px;
+  height:16px;
+  cursor:pointer;  
+}
+
+.regiontitlecopy {
+  overflow:hidden;
+  white-space: nowrap;
+  padding:0 10px 0 0;
+}
+
+.field {
+  margin-right:22px;
+  padding-bottom:20px;
+}
+
+.field .fieldtitle {
+    
+}
+
+.field .description {
+  
+}
+
+.field .errors {
+  
+}
+
+.field input {
+  margin:2px 0 1px 0;
+  width:100%; 
+}
+
+.field textarea {
+  margin:2px 0 2px 0;
+  width:100%;
+  height:70px;  
+}
+
+.field input.radio,
+.field input.multiCheckbox,
+.field input.multiCheckboxTree {
+  width:30px;
+  height:15px;
+  margin:0;
+  vertical-align:middle;
+}
+
+.field select.multiselect,
+.field select.select,
+.field select.selectTree,
+.field select.videoSelect {
+  width:100%;
+  margin:2px 0 2px 0;
+  padding:1px 0 1px 0;
+}
+
+.field .fieldoverflowcontainer {
+  border:1px solid #ccc; 
+  border-right:0; 
+  overflow:hidden; 
+  overflow-y:scroll; 
+  height:150px; 
+  margin:2px 0 0 0; 
+  padding:5px 0 5px 5px;
+}
+
+/* ----------------
+Region Positions */
+
+.absoluteright {
+  position:absolute;
+  top:50px;
+  right:30px;
+}
+
+/* only IE7 */
+*:first-child+html .absoluteright {
+  position:absolute;
+  top:50px;
+  right:22px;
+}
+
+.absoluteleft {
+  position:absolute;
+  top:30px;
+  left:10px;
+}
+
+.multiregionline {
+  background: url(/zoolu/images/main/bg_line_dashed.png) repeat-x 0 50%;
+  height:20px;
+  margin-right:10px;
+  margin-bottom:20px;
+}
+
+.multiregiontop {
+  background-color: #c6c6c6;
+  height:20px;
+  width:130px;
+  text-align:center;
+  margin:0 auto 0 auto;
+}
+
+/* ----------------
+Template Chooser Element */
+
+.templateChooser {
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+#divTemplateChooser {
+
+}
+
+#divCurrTemplate {
+  padding:2px 0 5px 0;
+}
+
+#divCurrTemplate img {
+  border:0;
+  display:block;
+}
+
+#divDescTemplate {
+  width:159px;
+  text-align:center;
+}
+
+#divChangeTemplate {
+  width:159px;
+  padding:2px 0 0 0;
+  text-align:center;
+}
+
+#divAllTemplates {
+  padding:0;
+  width:159px;
+}
+
+.tmpElement {
+  padding:0 0 10px 0;  
+}
+
+.tmpElement img {
+  border:0;
+  display:block;
+}
+
+/* ----------------
+Media Chooser Element */
+
+.mediawrapper {
+  width:100%; 
+}
+
+.mediawrapper div {
+   
+}
+
+.mediawrapper .mediatop {
+  text-align:right;
+  background-color:#e4e4e4;
+  height:16px;
+  /*margin:2px 0 0 0;*/
+  padding:2px 0 0 0;
+  border:1px solid #e4e4e4;
+}
+
+.mediawrapper .mediatop img {
+  border:0;
+  vertical-align:middle;
+  margin:0 5px 0 2px;
+  cursor:pointer;
+}
+
+.mediawrapper .media {
+  border:1px solid #ccc;
+  min-height:100px;
+  padding:2px 10px 10px 10px;
+}
+
+.mediaitem {
+  float:left;
+  width:100px;
+  height:100px;
+  margin:0 20px 20px 0;
+}
+
+.mediaitem table {
+  width:100%;
+  height:100%;
+}
+
+.mediaitem td {
+  width:100px;
+  height:100px;
+  vertical-align:bottom;
+  text-align:center;
+}
+
+.mediaitem td img {
+  display:block;
+}
+
+/* ----------------
+Document Chooser Element */
+
+.docwrapper {
+  width:100%; 
+}
+
+.docwrapper div {
+   
+}
+
+.docwrapper .doctop {
+  text-align:right;
+  background-color:#e4e4e4;
+  height:16px;
+  margin:2px 0 0 0;
+  padding:2px 0 0 0;
+  border:1px solid #e4e4e4;
+}
+
+.docwrapper .doctop img {
+  border:0;
+  vertical-align:middle;
+  margin:0 5px 0 2px;
+  cursor:pointer;
+}
+
+.docwrapper .document {
+  border:1px solid #ccc;
+  min-height:50px;
+  padding:2px 0 10px 0;
+}
+
+.docitem {
+  margin:0 0 0 10px;
+  border-bottom:1px solid #e4e4e4;
+}
+
+/* ----------------
+Contact Chooser Element */
+
+.conwrapper {
+  width:100%; 
+}
+
+.conwrapper div {
+   
+}
+
+.conwrapper .contop {
+  text-align:right;
+  background-color:#e4e4e4;
+  height:16px;
+  margin:2px 0 0 0;
+  padding:2px 0 0 0;
+  border:1px solid #e4e4e4;
+}
+
+.conwrapper .contop img {
+  border:0;
+  vertical-align:middle;
+  margin:0 5px 0 2px;
+  cursor:pointer;
+}
+
+.conwrapper .contact {
+  border:1px solid #ccc;
+  min-height:50px;
+  padding:2px 0 10px 0;
+}
+
+.conitem {
+  margin:0 0 0 10px;
+  border-bottom:1px solid #e4e4e4;
+}
+
+/* ----------------
+Linked Page */
+
+.linkedpage{
+  margin:10px 0 0 0;
+}
+
+/* ----------------
+Function Widget */
+
+.widgetfunctions {
+  padding:0;
+}
+
+.widget224content {
+  width:270px;
+  overflow: hidden;
+}
+
+.widgetcontenttop {
+  background-color:#754480;
+  height:40px;
+  padding:0;
+}
+
+.widgetcontentmain {
+  padding:10px;
+  min-height:50px;
+}
+
+.widgetcontentmain select.important {
+  width:147px;
+}
+
+.widgetcontentmain select {
+  width:147px;
+}
+
+.widgetcontentmain table {
+  width:100%;
+}
+
+.widgetcontentmain td {
+  vertical-align:top;
+  padding:0 0 10px;
+}
+
+.widgetcontentmain .tdImportant {
+  padding:0 10px 0 0;
+  text-align:right;
+}
+
+.widgetcontentmain .tdNormal {
+  padding:0 10px 0 0;
+  text-align:right;
+}
+
+.widgetcontentmain .publishdate {
+  float:left;
+  padding-right:10px;
+}
+
+.widgetcontentmain .iconcalendar {
+  vertical-align:middle;
+  float:left;
+  cursor:pointer;
+}
+
+.widgetcontentmain .currversion {
+  float:left;
+  width:30px;
+  overflow:hidden;
+}
+
+.widgetcontentmain #divPublishDateNew {
+  
+}
+
+.widgetcontentmain #divPublishDateNew .divpublishnewdateinner {
+  padding:5px 0 0 0; 
+}
+
+.widgetcontentmain #divPublishDateNew .divpublishnewdatetop,
+.widgetcontentmain #divPublishDateNew .divpublishnewdatebottom {
+  width:147px;
+  height:4px;
+  background-color:#fff;
+}
+
+.widgetcontentmain #divPublishDateNew div.newdate {
+  padding:2px 0 5px 5px;
+  background-color:#fff;
+  width:142px;
+}
+
+.widgetcontentmain #divPublishDateNew div.newtime {
+  padding:0 0 2px 5px;
+  background-color:#fff;
+  width:142px;
+}
+
+.widgetcontentmain #divPublishDateNew div.newtime div.newtimeinner {
+  float:left;
+}
+
+.widgetcontentmain #divPublishDateNew input {
+  width:2em;
+  padding:1px;
+  border: 1px solid #ccc;
+}
+
+.widgetcontentmain #divPublishDateNew input.year {
+  width:3em;
+}
+
+.widgetcontentmain #divPublishDateNew select {
+  width:50px;
+  padding:0;
+  border: 1px solid #ccc;
+}
+
+.widgetcontentmain #divPublishDateNew #buttonassume {
+  float:left;
+  cursor:pointer;
+  padding:0 0 0 5px;
+}
+
+/* ----------------
+Buttons: Save, Delete */
+
+#buttonsave {
+  float:left;
+  cursor:pointer;
+  margin:7px 0 0 10px;
+  display:inline;
+}
+
+#buttondelete {
+  float:right;
+  cursor:pointer;
+  margin:7px 10px 0 0;
+  display:inline;
+}
+
+#buttonnewversion {
+  float:left;
+  cursor:pointer;
+  margin:0 0 0 0;
+  display:inline;
+}
+
+.button17leftOff {
+  background: url(/zoolu/images/buttons/button_purple_left_small.png) no-repeat;
+  width: 5px !important;
+  height: 17px;
+  float:left;
+}
+
+.button17rightOff {
+  background: url(/zoolu/images/buttons/button_purple_right_small.png) no-repeat;
+  width: 5px !important;
+  height: 17px;
+  float:left;
+}
+
+.button17centerOff {
+  background: url(/zoolu/images/buttons/button_purple_center_small.png) repeat-x;
+  height:17px;
+  float:left;
+  padding:0 2px 0 2px;
+}
+
+.button25leftOff {
+  background: url(/zoolu/images/buttons/button_purple_left.png) no-repeat;
+  width: 6px !important;
+  height: 25px;
+  float:left;
+}
+
+.button25leftOn {
+  background: url(/zoolu/images/buttons/button_yellow_left.png) no-repeat;
+  width: 6px !important;
+  height: 25px;
+  float:left;
+}
+
+.button25rightOff {
+  background: url(/zoolu/images/buttons/button_purple_right.png) no-repeat;
+  width: 6px !important;
+  height: 25px;
+  float:left;
+}
+
+.button25rightOn {
+  background: url(/zoolu/images/buttons/button_yellow_right.png) no-repeat;
+  width: 6px !important;
+  height: 25px;
+  float:left;
+}
+
+.button25centerOff {
+  background: url(/zoolu/images/buttons/button_purple_center.png) repeat-x;
+  height:25px;
+  float:left;
+  width:90px;
+}
+
+.button25centerOn {
+  background: url(/zoolu/images/buttons/button_yellow_center.png) repeat-x;
+  height:25px;
+  float:left;
+  width:90px;
+}
+
+.button25centerOff img.iconsave,
+.button25centerOn img.iconsave {
+  vertical-align:middle;
+  margin:6px 0 0 2px;
+  padding-right:10px;
+  float:left;
+}
+
+.button25centerOff img.icondelete,
+.button25centerOn img.icondelete {
+  vertical-align:middle;
+  margin:4px 0 0 2px;
+  padding-right:10px;
+  float:left;
+}
+
+.button25centerOff div,
+.button25centerOn div {
+  float:left;
+  padding-top:4px;
+}
+
+.button17centerOff img {
+  vertical-align:middle;
+  margin:4px 0 0 2px;
+  padding-right:5px;
+  float:left;
+}
+
+.button17centerOff div {
+  float:left;
+  padding-top:0;
+}
+
+/* ----------------
+Save Message & Loader */
+
+.alertsave {
+  position:absolute;
+  left:0;
+  top:0;
+  height:40px;
+  width:270px;
+  background-color:#754480;
+}
+
+.alertsave .alertsaveloader {
+  width:100px;
+  margin:0 auto 0 auto;
+  padding:10px 0 0 0;
+  cursor:pointer;
+}
+
+.alertsave .alertsaveloader img {
+  vertical-align:middle;
+  margin:0 10px 3px 0;
+}
+
+.alertsavesucces {
+  position:absolute;
+  left:0;
+  top:0;
+  height:30px;
+  width:270px;
+  background-color:#ffd300;
+  padding:10px 0 0 0;
+  text-align:center;
+}
+
+.alertsaveerror {
+  position:absolute;
+  left:0;
+  top:0;
+  height:30px;
+  width:270px;
+  background-color:#CC0000;
+  padding:10px 0 0 0;
+  text-align:center;
+}
+
+.alertdeletesucces {
+  position:absolute;
+  left:0;
+  top:0;
+  height:30px;
+  width:270px;
+  background-color:#ffd300;
+  padding:10px 0 0 0;
+  text-align:center;
+}
+
+
+/* ----------------
+Pointers */
+
+.pointerwhite {
+  background-repeat:no-repeat;
+  background-position:center center;
+  height:20px;
+  width:10px;
+  font-size:0;
+  cursor:pointer;
+}
+
+.opened {
+  background-image:url(/zoolu/images/icons/pointer_white_opened.png);
+}
+
+.closed {
+  background-image:url(/zoolu/images/icons/pointer_white_closed.png);
+  margin-top:1px;
+}
+
+/* ----------------
+Corners */
+
+.cornertl {
+  background-image: url(/zoolu/images/main/content_inner_corners_tl.png);
+  background-color:#754480;
+  background-repeat:no-repeat;
+  width: 10px;
+  height: 20px;
+  float: left;
+  font-size: 0;
+}
+
+.cornertr {
+  background-image: url(/zoolu/images/main/content_inner_corners_tr.png);
+  background-color:#e4e4e4;
+  background-repeat:no-repeat;
+  width: 4px;
+  height: 20px;
+  float: right;
+  font-size: 0;
+}
+
+.configbox .cornertr,
+.configbox-closed .cornertr {
+  background-color:#aaa;
+} 
+
+.cornerbl {
+  background-image: url(/zoolu/images/main/content_inner_corners.png);
+  background-position: 0px 4px;
+  width: 4px;
+  height: 4px;
+  float: left;
+  font-size: 0;
+}
+
+.cornerbr {
+  background-image: url(/zoolu/images/main/content_inner_corners.png);
+  background-position: 4px 4px;
+  width: 4px;
+  height: 4px;
+  float: right;
+  font-size: 0;
+}
+
+.cornerbl-closed {
+  background-image: url(/zoolu/images/main/content_inner_corners_bl.png);
+  background-color:#754480;
+  background-repeat:no-repeat;
+  width: 10px;
+  height: 4px;
+  float: left;
+  font-size: 0;
+}
+
+/* ----------------
+Overlay Inner */
+
+/* --- overlay navigation --- */
+.olnavigationwrapper, .olnavigationwrapper2 {
+  position:relative;
+  background-color:#fff;
+  height:135px;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+.olnavigationwrapper2{
+  height:400px;
+}
+
+.olnavigationwrapper .olnavrootitem, .olnavigationwrapper2 .olnavrootitem  {
+  padding:5px 0 0 0;
+  cursor:default;
+} 
+
+.olnavigationwrapper .olnavchilditem {
+  padding:5px 0 0 22px;
+  cursor:default;
+}
+
+/* --- overlay content --- */
+.olcontentwrapper {
+  background-color:#ccc;
+  height:200px;
+  overflow:hidden;
+  overflow-y:scroll;
+  padding:0;
+}
+
+.olmediacontainer {
+  background-color:#e4e4e4;
+  padding:20px 0 0 20px;
+}
+
+.olmediaitem {
+  float:left;
+  width:100px;
+  height:100px;
+  margin:0 20px 20px 0;
+}
+
+.olmediaitem table {
+  width:100%;
+  height:100%;
+}
+
+.olmediaitem td {
+  width:100px;
+  height:100px;
+  vertical-align:bottom;
+  text-align:center;
+}
+
+.olmediaitem td img {
+	cursor:pointer;
+}
+
+.oldoctopleft {
+  background:#e4e4e4 url(/zoolu/images/main/list_corner_left_top.png) no-repeat scroll 0 0;
+  height:26px;
+  width:11px;
+  float:left;
+}
+
+.oldoctopright {
+  background:#e4e4e4 url(/zoolu/images/main/list_corner_right_top.png) no-repeat scroll right 0;
+	height:26px;
+	width:11px;
+	float:left;
+}
+
+.oldoctopitemicon {
+  background:#e4e4e4 url(/zoolu/images/main/pixel_white.gif) repeat-x scroll 0 0;
+	height:26px;
+	padding:0 10px 0 0;
+	text-align:left;
+	width:32px;
+	float:left;
+}
+
+.oldoctopitemtitle {
+  background:#e4e4e4 url(/zoolu/images/main/pixel_white.gif) repeat-x scroll 0 0;
+  height:20px;
+  padding:6px 10px 0 0;
+  text-align:left;
+  float:left;
+  width:339px;
+}
+
+.oldocitemcontainer {
+  min-height:148px; 
+  background-color:#fff;
+}
+
+.oldocitem {
+  border-bottom:1px solid #e4e4e4;
+}
+
+.oldocleft,
+.oldocright {
+  margin-top:1px;
+  height:32px;
+  width:11px;
+  float:left;
+}
+
+.oldocitemicon {
+  margin-top:1px;
+  height:32px;
+  padding:0px 10px 0 0;
+  text-align:left;
+  width:32px;
+  float:left;
+  cursor:pointer;
+}
+
+.oldocitemtitle {
+  margin-top:1px;
+  height:23px;
+  padding:9px 10px 0 0;
+  text-align:left;
+  float:left;
+  width:339px;
+  white-space:nowrap;
+  overflow:hidden;
+  cursor:pointer; 
+}
+
+.oldocbottomleft {
+  background:#e4e4e4 url(/zoolu/images/main/list_corner_left_bottom.png) no-repeat scroll 0 bottom;
+  height:26px;
+  width:11px;
+  float:left;
+}
+
+.oldocbottomright {
+  background:#e4e4e4 url(/zoolu/images/main/list_corner_right_bottom.png) no-repeat scroll right bottom;
+  height:26px;
+  width:11px;
+  float:left;
+}
+
+.oldocbottomcenter {
+  background:#e4e4e4 url(/zoolu/images/main/pixel_white.gif) repeat-x scroll 0 bottom;
+  height:26px;
+  width:391px;
+  float:left;
+}
+
+/* ----------------
+video select */
+
+.videoItem{
+  cursor: pointer; 
+  border-bottom:1px solid #999; 
+  height:75px; overflow:hidden;	
+}
+
+.videoItem.bg1{
+	background-color:#fff;
+}
+
+.videoItem.bg2{
+  background-color:#e4e4e4;
+}
+
+.videoThumb{
+  float:left; 
+  margin:0 10px 0 0;
+}
+
+.videoInfos{
+  padding:5px 0 0 10px; 
+}
+
+.videoItem.selected{
+  background-color:#ffd300;
+}
+
+/* @start, tab definition */
+
+.tabNavContainer {
+  background-color:#666;
+  height:40px;
+  margin:0px;
+  padding:0 0 0 120px;
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;   
+}
+.tabNavContainer ul {
+  position: absolute;
+  top: 10px;
+  clear: both;
+  height: 30px;
+}
+.tabNavContainer li {
+  float: left;
+  margin: 0 -3px 0 -6px;
+  cursor: pointer;
+}
+.tabNavContainer li:hover,
+.tabNavContainer .selected {
+  margin: 0 -3px 0 -2px;
+}
+.tabNavContainer li .start {
+  float: left;
+  height: 30px;
+  width: 11px;
+  background: url(/zoolu/images/navigation/tab_left_off.png) no-repeat 0 0;
+  position: relative;
+  z-index: 10;
+  padding: 0px;
+}
+.tabNavContainer li .end  {
+  float: left;
+  height: 30px;
+  width: 11px;
+  background: url(/zoolu/images/navigation/tab_right_off.png) no-repeat 0 0;
+}
+.tabNavContainer li .middle  {
+  float: left;
+  height: 19px; /* 30px - padding */
+  padding: 11px 10px 0 10px;
+  position: relative;
+  background: url(/zoolu/images/navigation/tab_middle_off.png) repeat-x 0 0;  
+}
+.tabNavContainer li:hover .start,
+.tabNavContainer .selected .start {  
+  background: url(/zoolu/images/navigation/tab_left_on.png) repeat-x 0 0;
+  float: left;
+  height: 30px;
+  width: 11px;
+  margin: 0 0 0 -4px;
+}
+.tabNavContainer li:hover .end,
+.tabNavContainer .selected .end {  
+  background: url(/zoolu/images/navigation/tab_right_on.png) repeat-x 0 0;
+  float: left;
+  height: 30px;
+  width: 11px;
+  position: relative;
+  z-index: 20;
+}
+.tabNavContainer li:hover .middle a,
+.tabNavContainer .selected .middle a {
+  color: #000;
+}
+.tabNavContainer li:hover .middle,
+.tabNavContainer .selected .middle { 
+  background: #666 url(/zoolu/images/navigation/tab_middle_on.png) repeat-x 0 0;
+  float: left;
+  height: 19px; /* 30px - padding */
+  padding: 11px 10px 0 10px;
+  color: #fff;  
+}
+.tabNavContainer li .middle a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+}
+.tabNavContainer li .middle a:hover {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;  
+}
+/* @end, Navigation Definition */
+

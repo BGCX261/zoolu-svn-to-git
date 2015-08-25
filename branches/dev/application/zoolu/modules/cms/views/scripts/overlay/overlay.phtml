@@ -1,0 +1,25 @@
+<?php
+  require_once (dirname(__FILE__).'/../../helpers/OverlayHelper.php');
+  $objHelper = new OverlayHelper();
+?> 
+
+<div class="oltitle"><?php echo $this->overlaytitle; ?></div>
+<div class="spacer1"></div>
+<div class="olnavigationwrapper">
+  <?php echo $objHelper->getNavigationElements($this->elements, $this->viewtype); ?>  
+</div>
+<?php if($this->rootLevelType == Zend_Registry::get('Core')->sysConfig->root_level_types->images) :?>
+<div class="contenthead">
+  <div id="mediaviewtypes">
+    <div onclick="myOverlay.setViewType(1); return false;" class="iconthumbview" id="divThumbView"></div>
+    <div onclick="myOverlay.setViewType(2); return false;" class="iconlistview_on" id="divListView"></div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="clear"></div>
+<?php else: ?>
+<div class="spacer1"></div>
+<?php endif; ?> 
+<div id="olContent" class="olcontentwrapper">
+</div>
+<div class="spacer1 clear"></div>

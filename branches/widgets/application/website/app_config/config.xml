@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configdata>
+  
+  <!--
+  ***********************************************************
+  * config for online evnironment                           *
+  ***********************************************************
+  -->
+  <production>
+    
+    <gmaps>
+      <!-- Google Maps API-Key for sportservice.massiveart.at -->
+      <!--<key>ABQIAAAAuHONMei_wmASLdi5Q2Db3xQIgr5p9E0wjO4Wkkntg6WrgV5YIxQO4FTS3kR7ciRUeYCHfSX9ddEOFg</key>-->
+      <!-- Google Maps API-Key for www.sportservice-v.at -->
+      <key>ABQIAAAAuHONMei_wmASLdi5Q2Db3xRX1jCuCB9C7WKVnBt8ZIH40aIQaRS9qo5Ey8l_2L9XVt4bQiHyWn2qmw</key>
+    </gmaps>
+    
+    <!-- languages -->
+    <languages>
+      <language>
+        <id>1</id>
+        <code>de</code>
+      </language>
+      <language>
+        <id>2</id>
+        <code>en</code>
+      </language>
+    </languages>
+    
+    <!-- mailer -->
+    <mail>
+      <from>        
+        <name>Sportservice Vorarlberg</name>
+        <address>no-reply@sportservice-v.at</address>
+      </from>
+      <recipient>        
+        <name>Sportservice Vorarlberg</name>
+        <address>anmeldungen@sportservice-v.at</address>
+      </recipient>
+      <params>
+        <host>srv05.derprovider.at</host>
+        <username>mail@area51.at</username>
+        <password>zUHGhNh#</password>
+      </params>
+      <hiddenfields>
+        <mail>_mail</mail>
+        <database>_database</database>
+        <dbtable>_dbtable</dbtable>
+      </hiddenfields>
+    </mail>
+    
+    <!-- table: categories / idRootCategory=27, idCategoryTypes=2 -->
+    <viewtypes>
+      <col1>
+        <id>28</id>
+        <matchcode>col-1</matchcode>
+      </col1>
+      <col1_img>
+        <id>29</id>
+        <matchcode>col-1-img</matchcode>
+      </col1_img>
+      <col2>
+        <id>30</id>
+        <matchcode>col-2</matchcode>
+      </col2>
+      <col2_img>
+        <id>31</id>
+        <matchcode>col-2-img</matchcode>
+      </col2_img>
+      <list>
+        <id>35</id>
+        <matchcode>list</matchcode>
+      </list>
+      <list_img>
+        <id>36</id>
+        <matchcode>list-img</matchcode>
+      </list_img>      
+    </viewtypes>
+    
+    <!-- table: categories / idRootCategory=42, idCategoryTypes=2 -->
+    <viewoptions>
+      <similar_pages>
+        <id>43</id>
+        <matchcode>similar_pages</matchcode>
+      </similar_pages> 
+    </viewoptions>
+    
+    <!-- table: categories / idRootCategory=55, idCategoryTypes=2 -->
+    <contactoptions>
+      <big_contact>
+        <id>56</id>
+        <matchcode>big_contact</matchcode>
+      </big_contact> 
+    </contactoptions>
+    
+    <!-- table: categories / idRootCategory=49, idCategoryTypes=2 -->
+    <eventstatus>
+      <open>
+        <id>50</id>
+      </open>
+      <rest>
+        <id>51</id>
+      </rest>
+      <full>
+        <id>52</id>
+      </full> 
+    </eventstatus> 
+     
+  </production>
+  
+  <!--
+  ***********************************************************
+  * config for developement evnironment                     *
+  ***********************************************************
+  -->
+  <staging extends="production">
+   
+    <!-- Google Maps API-Key for http://cha.zoolu.area51.at / http://tsh.zoolu.area51.at -->
+    <gmaps>
+      <key>ABQIAAAAuHONMei_wmASLdi5Q2Db3xT0I2mhHVaMXXFtj2QI29VyNFRr-BRTCJACUBszLTxMCJOKORZebHpy0w</key>
+      <!-- tsh: ABQIAAAAuHONMei_wmASLdi5Q2Db3xTXuXYb7-qpDt3x5Y4DV1tWZ8k3LRRwadol1pDJMCE4RJggwDwDVi7Qrw -->
+      <!-- cha: ABQIAAAAuHONMei_wmASLdi5Q2Db3xT0I2mhHVaMXXFtj2QI29VyNFRr-BRTCJACUBszLTxMCJOKORZebHpy0w -->
+    </gmaps>
+    
+    <!-- mailer -->
+    <mail>
+      <recipient>        
+        <name>Cornelius Hansjakob</name>
+        <address>cha@massiveart.com</address>
+      </recipient>
+    </mail>
+    
+  </staging>
+  
+</configdata>

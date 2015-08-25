@@ -1,0 +1,822 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZOOLU\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-21 08:58+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Cornelius Hansjakob <cornelius.hansjakob@massiveart.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: AUSTRIA\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-Basepath: /Volumes/massive-brunello/websites/ivoclarvivadent.zoolu.area51.at/\n"
+"X-Poedit-SearchPath-0: application/zoolu\n"
+"X-Poedit-SearchPath-1: public/zoolu\n"
+"X-Poedit-SearchPath-2: library/massiveart\n"
+
+#: application/zoolu/modules/users/views/helpers/ListHelper.php:135
+#, php-format
+msgid "Search_for_"
+msgstr "Search for \"%s\""
+
+#: application/zoolu/modules/users/views/helpers/ListHelper.php:138
+#, php-format
+msgid "No_search_results_for_"
+msgstr "No search results for \"%s\""
+
+#: application/zoolu/modules/users/views/helpers/ListHelper.php:144
+msgid "Reset"
+msgstr "Reset"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:132
+#: application/zoolu/modules/users/controllers/GroupController.php:190
+msgid "New_Group"
+msgstr "New Group"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:253
+#: application/zoolu/modules/users/controllers/GroupController.php:303
+msgid "Edit_Group"
+msgstr "Edit Group"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:429
+#: application/zoolu/modules/users/controllers/ResourceController.php:354
+msgid "title"
+msgstr "Title"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:430
+#: application/zoolu/modules/users/controllers/ResourceController.php:355
+msgid "key"
+msgstr "Key"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:432
+msgid "description"
+msgstr "Description"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:434
+msgid "groupTypes"
+msgstr "Group types"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:441
+#: application/zoolu/modules/users/controllers/ResourceController.php:358
+#: application/zoolu/modules/users/controllers/UserController.php:441
+msgid "General_information"
+msgstr "General information"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:451
+msgid "All_languages"
+msgstr "All languages"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:465
+#: application/zoolu/modules/users/controllers/GroupController.php:495
+msgid "language"
+msgstr "Language"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:471
+#: application/zoolu/modules/users/controllers/GroupController.php:496
+msgid "permissions"
+msgstr "Permissions"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:486
+#: application/zoolu/modules/users/controllers/GroupController.php:506
+msgid "Language_specific"
+msgstr "language specific"
+
+#: application/zoolu/modules/users/controllers/GroupController.php:489
+msgid "Permissions"
+msgstr "Permissions"
+
+#: application/zoolu/modules/users/controllers/ResourceController.php:134
+#: application/zoolu/modules/users/controllers/ResourceController.php:182
+msgid "New_Resource"
+msgstr "New Resource"
+
+#: application/zoolu/modules/users/controllers/ResourceController.php:223
+#: application/zoolu/modules/users/controllers/ResourceController.php:274
+msgid "Edit_Resource"
+msgstr "Edit Resource"
+
+#: application/zoolu/modules/users/controllers/ResourceController.php:367
+#: application/zoolu/modules/users/controllers/UserController.php:457
+msgid "groups"
+msgstr "Groups"
+
+#: application/zoolu/modules/users/controllers/ResourceController.php:370
+msgid "Resource_groups"
+msgstr "Resource groups"
+
+#: application/zoolu/modules/users/controllers/UserController.php:165
+#: application/zoolu/modules/users/controllers/UserController.php:218
+msgid "New_User"
+msgstr "New User"
+
+#: application/zoolu/modules/users/controllers/UserController.php:262
+#: application/zoolu/modules/users/controllers/UserController.php:318
+msgid "Edit_User"
+msgstr "Edit User"
+
+#: application/zoolu/modules/users/controllers/UserController.php:429
+msgid "Please_choose"
+msgstr "Please choose"
+
+#: application/zoolu/modules/users/controllers/UserController.php:435
+msgid "fname"
+msgstr "First name"
+
+#: application/zoolu/modules/users/controllers/UserController.php:436
+msgid "sname"
+msgstr "Last name"
+
+#: application/zoolu/modules/users/controllers/UserController.php:437
+msgid "username"
+msgstr "Username"
+
+#: application/zoolu/modules/users/controllers/UserController.php:438
+msgid "system_language"
+msgstr "System language"
+
+#: application/zoolu/modules/users/controllers/UserController.php:444
+msgid "password"
+msgstr "Password"
+
+#: application/zoolu/modules/users/controllers/UserController.php:445
+msgid "Confirm_password"
+msgstr "Confirm password"
+
+#: application/zoolu/modules/users/controllers/UserController.php:448
+msgid "Reset_password"
+msgstr "Reset password"
+
+#: application/zoolu/modules/users/controllers/UserController.php:460
+msgid "User_groups"
+msgstr "User groups"
+
+#: application/zoolu/modules/users/controllers/UserController.php:504
+msgid "Please_enter_username"
+msgstr "Please enter your username"
+
+#: application/zoolu/modules/users/controllers/UserController.php:534
+msgid "Username_not_found"
+msgstr "Username not found!"
+
+#: application/zoolu/modules/users/controllers/UserController.php:541
+msgid "Wrong_password"
+msgstr "Wrong password!"
+
+#: application/zoolu/modules/users/controllers/UserController.php:590
+msgid "Login_failed"
+msgstr "Login failed!"
+
+#: application/zoolu/modules/global/views/helpers/ListHelper.php:183
+#, php-format
+msgid "No_search_result"
+msgstr "No search result"
+
+#: application/zoolu/modules/global/views/helpers/FolderHelper.php:134
+msgid "Author"
+msgstr "Author"
+
+#: application/zoolu/modules/global/views/helpers/FolderHelper.php:137
+msgid "changed"
+msgstr "Changed"
+
+#: application/zoolu/modules/global/controllers/ElementController.php:442
+msgid "Shop"
+msgstr "Shop"
+
+#: application/zoolu/modules/global/controllers/ElementController.php:779
+msgid "Search"
+msgstr "Search"
+
+#: application/zoolu/modules/global/controllers/OverlayController.php:85
+msgid "Select_product"
+msgstr "Select product"
+
+#: application/zoolu/modules/properties/controllers/OverlayController.php:75
+msgid "Assign_medias"
+msgstr "Assign medias"
+
+#: application/zoolu/modules/properties/controllers/OverlayController.php:88
+msgid "Assign_documents"
+msgstr "Assign documents"
+
+#: application/zoolu/modules/cms/views/helpers/NavigationHelper.php:95
+msgid "Web_content"
+msgstr "Web content"
+
+#: application/zoolu/modules/cms/views/helpers/NavigationHelper.php:115
+msgid "Widgets"
+msgstr "Widgets"
+
+#: application/zoolu/modules/cms/views/helpers/NavigationHelper.php:120
+msgid "Settings"
+msgstr "Settings"
+
+#: application/zoolu/modules/cms/controllers/OverlayController.php:119
+msgid "Assign_videos"
+msgstr "Assign videos"
+
+#: application/zoolu/modules/cms/controllers/OverlayController.php:134
+msgid "Assign_contacts"
+msgstr "Assign contacts"
+
+#: application/zoolu/modules/cms/controllers/OverlayController.php:157
+msgid "Select_page"
+msgstr "Select page"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:198
+msgid "Languages"
+msgstr "Languages"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:207
+msgid "uploaded"
+msgstr "Uploaded"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:276
+msgid "yes"
+msgstr "yes"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:276
+msgid "no"
+msgstr "no"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:341
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:434
+#: application/zoolu/modules/media/controllers/NavigationController.php:78
+#: application/zoolu/modules/media/controllers/UploadController.php:280
+msgid "Add_description_"
+msgstr "Add a description ..."
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:373
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:505
+msgid "Search_or_add_tags"
+msgstr "Search or add tags"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:388
+msgid "Medium_is_language_specific"
+msgstr "Medium is language specific"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:473
+msgid "Region_specific"
+msgstr "Region specific"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:484
+msgid "Group_specific"
+msgstr "Group specific"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:497
+msgid "Title"
+msgstr "Title"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:500
+msgid "Tags"
+msgstr "Tags"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:523
+msgid "Add_medias"
+msgstr "Add medias"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:572
+msgid "New_version"
+msgstr "New version"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:591
+msgid "Version_list"
+msgstr "Version list"
+
+#: application/zoolu/modules/media/views/helpers/ViewHelper.php:598
+msgid "Version"
+msgstr "Version"
+
+#: application/zoolu/modules/core/controllers/FolderController.php:487
+#: application/zoolu/modules/core/controllers/FolderController.php:540
+msgid "Select_folder"
+msgstr "Select folder"
+
+#: application/zoolu/language/addon-language-keys.php:38
+msgid "portals"
+msgstr "PORTALS"
+
+#: application/zoolu/language/addon-language-keys.php:39
+msgid "media"
+msgstr "MEDIA"
+
+#: application/zoolu/language/addon-language-keys.php:40
+msgid "global"
+msgstr "GLOBAL"
+
+#: application/zoolu/language/addon-language-keys.php:41
+msgid "user_administration"
+msgstr "User Administration"
+
+#: application/zoolu/language/addon-language-keys.php:42
+msgid "settings"
+msgstr "Settings"
+
+#: application/zoolu/language/addon-language-keys.php:43
+msgid "contacts"
+msgstr "Contacts"
+
+#: application/zoolu/language/addon-language-keys.php:48
+msgid "name"
+msgstr "Name"
+
+#: application/zoolu/language/addon-language-keys.php:51
+msgid "editor"
+msgstr "Editor"
+
+#: application/zoolu/language/addon-language-keys.php:67
+msgid "status"
+msgstr "Status"
+
+#: application/zoolu/language/addon-language-keys.php:68
+msgid "company"
+msgstr "Company"
+
+#: application/zoolu/language/addon-language-keys.php:74
+msgid "New_Content"
+msgstr "New Content"
+
+#: application/zoolu/language/addon-language-keys.php:75
+msgid "New_Product"
+msgstr "New Product"
+
+#: application/zoolu/language/addon-language-keys.php:76
+msgid "New_Product_Link"
+msgstr "New Product Link"
+
+#: application/zoolu/language/addon-language-keys.php:77
+msgid "New_Press"
+msgstr "New Press"
+
+#: application/zoolu/language/addon-language-keys.php:78
+msgid "New_Course"
+msgstr "New Course"
+
+#: application/zoolu/language/addon-language-keys.php:79
+msgid "New_Event"
+msgstr "New Event"
+
+#: library/massiveart/generic/fields/Collection/forms/helpers/FormCollection.php:84
+msgid "Add_page"
+msgstr "Add page"
+
+#: library/massiveart/generic/fields/Video/forms/helpers/FormVideo.php:70
+msgid "Add_videos"
+msgstr "Add videos"
+
+#: library/massiveart/generic/fields/Contact/forms/helpers/FormContact.php:70
+msgid "Add_contacts"
+msgstr "Add contacts"
+
+#: library/massiveart/generic/fields/InternalLinks/forms/helpers/FormInternalLinks.php:84
+msgid "Add_internal_links"
+msgstr "Add internal links"
+
+#: library/massiveart/generic/fields/DocumentFilter/forms/helpers/FormDocumentFilter.php:117
+msgid "Document_filtering_by_tags"
+msgstr "Document filtering by tags"
+
+#: library/massiveart/generic/fields/DocumentFilter/forms/helpers/FormDocumentFilter.php:120
+msgid "Search_tags"
+msgstr "Search tags"
+
+#: library/massiveart/generic/fields/Url/forms/helpers/FormUrl.php:102
+msgid "Address"
+msgstr "Address"
+
+#: library/massiveart/generic/fields/Url/forms/helpers/FormUrl.php:102
+msgid "Edit"
+msgstr "Edit"
+
+#: library/massiveart/generic/fields/Url/forms/helpers/FormUrl.php:109
+msgid "Url_history"
+msgstr "Url history"
+
+#: library/massiveart/generic/fields/Document/forms/helpers/FormDocument.php:70
+msgid "Add_documents"
+msgstr "Add documents"
+
+#: application/zoolu/modules/users/views/scripts/pagination.phtml:13
+#: application/zoolu/modules/users/views/scripts/pagination.phtml:22
+msgid "previous"
+msgstr "previous"
+
+#: application/zoolu/modules/users/views/scripts/pagination.phtml:28
+msgid "Page"
+msgstr "Page"
+
+#: application/zoolu/modules/users/views/scripts/pagination.phtml:43
+#: application/zoolu/modules/users/views/scripts/pagination.phtml:52
+msgid "next"
+msgstr "next"
+
+#: application/zoolu/modules/users/views/scripts/pagination.phtml:60
+msgid "Items_per_page"
+msgstr "Items per page"
+
+#: application/zoolu/modules/users/views/scripts/user/userinfo.phtml:11
+msgid "My_Settings"
+msgstr "My settings"
+
+#: application/zoolu/modules/users/views/scripts/user/userinfo.phtml:11
+msgid "Logout"
+msgstr "Logout"
+
+#: application/zoolu/modules/users/views/scripts/user/list.phtml:12
+msgid "Delete_users"
+msgstr "Do you want to delete these %i users?"
+
+#: application/zoolu/modules/users/views/scripts/user/list.phtml:13
+msgid "Delete_user"
+msgstr "Do you want to delete this user?"
+
+#: application/zoolu/modules/users/views/scripts/user/login.phtml:5
+#: application/zoolu/modules/users/views/scripts/user/login.phtml:37
+msgid "Login"
+msgstr "Login"
+
+#: application/zoolu/modules/users/views/scripts/user/login.phtml:50
+msgid "Username"
+msgstr "Username"
+
+#: application/zoolu/modules/users/views/scripts/user/login.phtml:59
+msgid "Password"
+msgstr "Password"
+
+#: application/zoolu/modules/users/views/scripts/user/login.phtml:67
+#: application/zoolu/modules/users/views/scripts/user/login.phtml:84
+msgid "Password_forgotten"
+msgstr "Password forgotten?"
+
+#: application/zoolu/modules/global/views/scripts/navigation/rootnavigation.phtml:23
+#: application/zoolu/modules/global/views/scripts/navigation/childnavigation.phtml:14
+msgid "Show_Add_Menu"
+msgstr "Add"
+
+#: application/zoolu/modules/global/views/scripts/navigation/rootnavigation.phtml:32
+#: application/zoolu/modules/global/views/scripts/navigation/rootnavigation.phtml:33
+#: application/zoolu/modules/global/views/scripts/navigation/childnavigation.phtml:35
+#: application/zoolu/modules/global/views/scripts/navigation/childnavigation.phtml:36
+msgid "New_Folder"
+msgstr "New Folder"
+
+#: application/zoolu/modules/global/views/scripts/navigation/tree.phtml:59
+msgid "Change_parent_folder"
+msgstr "Change parent folder"
+
+#: application/zoolu/modules/global/views/scripts/navigation/tree.phtml:64
+msgid "Load_content_as_list"
+msgstr "Load content as list"
+
+#: application/zoolu/modules/global/views/scripts/navigation/childnavigation.phtml:23
+#: application/zoolu/modules/global/views/scripts/navigation/childnavigation.phtml:24
+#: application/zoolu/modules/global/views/scripts/navigation/childnavigation.phtml:29
+#: application/zoolu/modules/global/views/scripts/navigation/childnavigation.phtml:30
+msgid "New_"
+msgstr "New"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:4
+msgid "Test_page"
+msgstr "Test page"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:30
+msgid "Status"
+msgstr "Status"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:39
+msgid "Type"
+msgstr "Type"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:49
+msgid "show_in_navigation"
+msgstr "show in navigation"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:54
+msgid "enable_language_fallback"
+msgstr "enable language fallback"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:65
+msgid "Published"
+msgstr "Published"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:85
+msgid "Apply"
+msgstr "Apply"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:102
+msgid "Security"
+msgstr "Security"
+
+#: application/zoolu/modules/global/views/scripts/element/form.phtml:139
+msgid "Last_change"
+msgstr "Last change"
+
+#: application/zoolu/modules/global/views/scripts/element/list.phtml:13
+msgid "Delete_products"
+msgstr "Do you want to delete these %i products?"
+
+#: application/zoolu/modules/global/views/scripts/element/list.phtml:14
+msgid "Delete_product"
+msgstr "Do you want to delete this product?"
+
+#: application/zoolu/modules/contacts/views/scripts/location/list.phtml:13
+#: application/zoolu/modules/properties/views/scripts/location/list.phtml:13
+msgid "Delete_locations"
+msgstr "Do you want to delete these %i locations?"
+
+#: application/zoolu/modules/contacts/views/scripts/location/list.phtml:14
+#: application/zoolu/modules/properties/views/scripts/location/list.phtml:14
+msgid "Delete_location"
+msgstr "Do you want to delete this location?"
+
+#: application/zoolu/modules/contacts/views/scripts/member/list.phtml:13
+msgid "Delete_members"
+msgstr "Do you want to delete these %i users?"
+
+#: application/zoolu/modules/contacts/views/scripts/member/list.phtml:14
+msgid "Delete_member"
+msgstr "Do you want to delete this user?"
+
+#: application/zoolu/modules/contacts/views/scripts/navigation/contactnavigation.phtml:30
+msgid "New_Contact"
+msgstr "New Contact"
+
+#: application/zoolu/modules/contacts/views/scripts/company/list.phtml:13
+msgid "Delete_companies"
+msgstr "Do you want to delete these %i companies?"
+
+#: application/zoolu/modules/contacts/views/scripts/company/list.phtml:14
+msgid "Delete_company"
+msgstr "Do you want to delete this company?"
+
+#: application/zoolu/modules/properties/views/scripts/navigation/catnavigation.phtml:23
+msgid "New_Category"
+msgstr "New Category"
+
+#: application/zoolu/modules/cms/views/scripts/page/dashboard.phtml:5
+msgid "Recent_changes"
+msgstr "Recent changes"
+
+#: application/zoolu/modules/cms/views/scripts/page/dashboard.phtml:12
+msgid "Modified_by"
+msgstr "Modified by"
+
+#: application/zoolu/modules/cms/views/scripts/page/dashboard.phtml:14
+msgid "created"
+msgstr "Created"
+
+#: application/zoolu/modules/cms/views/scripts/page/form.phtml:58
+msgid "show_only_for_region"
+msgstr "show only for region"
+
+#: application/zoolu/modules/cms/views/scripts/navigation/rootnavigation.phtml:23
+msgid "New_Homepage"
+msgstr "New Homepage"
+
+#: application/zoolu/modules/cms/views/scripts/navigation/rootnavigation.phtml:28
+msgid "New_Page"
+msgstr "New Page"
+
+#: application/zoolu/modules/cms/views/scripts/overlay/maintenance.phtml:18
+msgid "Maintenance_activation"
+msgstr "Activate maintenance page"
+
+#: application/zoolu/modules/cms/views/scripts/overlay/maintenance.phtml:19
+msgid "Yes"
+msgstr "Yes"
+
+#: application/zoolu/modules/cms/views/scripts/overlay/maintenance.phtml:20
+msgid "No"
+msgstr "No"
+
+#: application/zoolu/modules/cms/views/scripts/overlay/maintenance.phtml:29
+msgid "Startdate_eg"
+msgstr "Start<br/>(e.g. DD.MM.YYYY hh:mm)"
+
+#: application/zoolu/modules/cms/views/scripts/overlay/maintenance.phtml:35
+msgid "Enddate_eg"
+msgstr "End<br/>(e.g. DD.MM.YYYY hh:mm)"
+
+#: application/zoolu/modules/cms/views/scripts/overlay/maintenance.phtml:42
+msgid "Url_eg"
+msgstr "Url (e.g. /en/xxx/yyy)"
+
+#: application/zoolu/modules/media/views/scripts/file/singleform.phtml:16
+#: application/zoolu/modules/media/views/scripts/file/form.phtml:16
+msgid "Edit_media"
+msgstr "Edit media"
+
+#: application/zoolu/modules/media/views/scripts/file/singleform.phtml:26
+#: application/zoolu/modules/media/views/scripts/file/form.phtml:25
+msgid "Cancel"
+msgstr "Cancel"
+
+#: application/zoolu/modules/media/views/scripts/file/singleform.phtml:32
+#: application/zoolu/modules/media/views/scripts/file/form.phtml:31
+msgid "Save"
+msgstr "Save"
+
+#: application/zoolu/modules/media/views/scripts/view/dashboard.phtml:13
+msgid "Uploaded_by"
+msgstr "Uploaded by"
+
+#: application/zoolu/modules/core/views/scripts/folder/security.phtml:15
+msgid "Website"
+msgstr "Website"
+
+#: application/zoolu/modules/core/views/scripts/folder/form.phtml:35
+msgid "Publish"
+msgstr "Publish"
+
+#: application/zoolu/modules/core/views/scripts/folder/form.phtml:75
+msgid "Folder_permission"
+msgstr "Folder permission"
+
+#: application/zoolu/layouts/contacts-tree.phtml:28
+#: application/zoolu/layouts/properties.phtml:28
+#: application/zoolu/layouts/global-tree.phtml:28
+#: application/zoolu/layouts/index.phtml:28
+#: application/zoolu/layouts/users.phtml:28
+#: application/zoolu/layouts/media.phtml:28
+msgid "Report_bugs"
+msgstr "Report a bug"
+
+#: application/zoolu/layouts/contacts-tree.phtml:28
+#: application/zoolu/layouts/properties.phtml:28
+#: application/zoolu/layouts/global-tree.phtml:28
+#: application/zoolu/layouts/index.phtml:28
+#: application/zoolu/layouts/users.phtml:28
+#: application/zoolu/layouts/media.phtml:28
+msgid "Help_and_FAQ"
+msgstr "Help & FAQ"
+
+#: application/zoolu/layouts/contacts-tree.phtml:68
+#: application/zoolu/layouts/properties.phtml:74
+#: application/zoolu/layouts/users.phtml:83
+#: application/zoolu/layouts/media.phtml:131
+msgid "New"
+msgstr "New"
+
+#: application/zoolu/layouts/contacts-tree.phtml:84
+#: application/zoolu/layouts/contacts-tree.phtml:151
+#: application/zoolu/layouts/properties.phtml:90
+#: application/zoolu/layouts/properties.phtml:157
+#: application/zoolu/layouts/global-tree.phtml:98
+#: application/zoolu/layouts/users.phtml:99
+#: application/zoolu/layouts/users.phtml:140
+#: application/zoolu/layouts/media.phtml:102
+#: application/zoolu/layouts/media.phtml:148
+msgid "Delete"
+msgstr "Delete"
+
+#: application/zoolu/layouts/contacts-tree.phtml:131
+#: application/zoolu/layouts/properties.phtml:137
+#: application/zoolu/layouts/global-tree.phtml:78
+#: application/zoolu/layouts/users.phtml:73
+#: application/zoolu/layouts/media.phtml:82
+msgid "Saved"
+msgstr "Saved"
+
+#: application/zoolu/layouts/contacts-tree.phtml:132
+#: application/zoolu/layouts/properties.phtml:138
+#: application/zoolu/layouts/global-tree.phtml:79
+#: application/zoolu/layouts/users.phtml:74
+#: application/zoolu/layouts/media.phtml:83
+msgid "Can_not_Save"
+msgstr "Can not save"
+
+#: application/zoolu/layouts/contacts-tree.phtml:133
+#: application/zoolu/layouts/properties.phtml:139
+#: application/zoolu/layouts/global-tree.phtml:80
+#: application/zoolu/layouts/users.phtml:75
+#: application/zoolu/layouts/media.phtml:84
+msgid "Deleted"
+msgstr "Deleted"
+
+#: application/zoolu/layouts/contacts-tree.phtml:203
+#: application/zoolu/layouts/properties.phtml:209
+#: application/zoolu/layouts/global-tree.phtml:149
+#: application/zoolu/layouts/users.phtml:193
+#: application/zoolu/layouts/media.phtml:234
+#: application/zoolu/layouts/media.phtml:356
+msgid "Ok"
+msgstr "Ok"
+
+#: application/zoolu/layouts/contacts-tree.phtml:252
+#: application/zoolu/layouts/properties.phtml:258
+#: application/zoolu/layouts/global-tree.phtml:199
+#: application/zoolu/layouts/users.phtml:241
+#: application/zoolu/layouts/media.phtml:425
+msgid "Delete_"
+msgstr "Delete?"
+
+#: application/zoolu/layouts/contacts-tree.phtml:253
+#: application/zoolu/layouts/properties.phtml:260
+msgid "Delete_unit"
+msgstr "Do you want to delete this group?"
+
+#: application/zoolu/layouts/contacts-tree.phtml:255
+#: application/zoolu/layouts/properties.phtml:262
+msgid "Delete_contact"
+msgstr "Do you want to delete this contact?"
+
+#: application/zoolu/layouts/properties.phtml:259
+msgid "Delete_category"
+msgstr "Do you want to delete this category?"
+
+#: application/zoolu/layouts/global-tree.phtml:200
+#: application/zoolu/layouts/media.phtml:426
+msgid "Delete_folder"
+msgstr "Do you want to delete this folder?"
+
+#: application/zoolu/layouts/global-tree.phtml:202
+msgid "Delete_press"
+msgstr "Do you want to delete this press release?"
+
+#: application/zoolu/layouts/global-tree.phtml:203
+msgid "Delete_course"
+msgstr "Do you want to delete this course?"
+
+#: application/zoolu/layouts/global-tree.phtml:204
+msgid "Delete_event"
+msgstr "Do you want to delete this event?"
+
+#: application/zoolu/layouts/global-tree.phtml:217
+msgid "Global"
+msgstr "Global"
+
+#: application/zoolu/layouts/users.phtml:244
+msgid "User_administration"
+msgstr "User Administration"
+
+#: application/zoolu/layouts/media.phtml:146
+msgid "Open"
+msgstr "Open"
+
+#: application/zoolu/layouts/media.phtml:147
+msgid "Move"
+msgstr "Move"
+
+#: application/zoolu/layouts/media.phtml:285
+msgid "Upload_your_media"
+msgstr "Upload your media"
+
+#: application/zoolu/layouts/media.phtml:410
+msgid "All_files"
+msgstr "All files"
+
+#: application/zoolu/layouts/media.phtml:427
+msgid "Delete_image"
+msgstr "Do you want to delete this image?"
+
+#: application/zoolu/layouts/media.phtml:428
+msgid "Delete_images"
+msgstr "Do you want to delete these %i images?"
+
+#: application/zoolu/layouts/media.phtml:429
+msgid "Delete_document"
+msgstr "Do you want to delete this document?"
+
+#: application/zoolu/layouts/media.phtml:430
+msgid "Delete_documents"
+msgstr "Do you want to delete these %i documents?"
+
+#: application/zoolu/layouts/media.phtml:431
+msgid "Delete_video"
+msgstr "Do you want to delete this video?"
+
+#: application/zoolu/layouts/media.phtml:432
+msgid "Delete_videos"
+msgstr "Do you want to delete these %i videos?"
+
+#: application/zoolu/layouts/media.phtml:438
+msgid "Media"
+msgstr "Media"
+
+#: application/zoolu/layouts/cms.phtml:201
+msgid "Maintenance_properties"
+msgstr "Maintenance properties"
+
+#: application/zoolu/layouts/cms.phtml:253
+msgid "Delete_page"
+msgstr "Do you want to delete this page?"
+
+#: application/zoolu/layouts/cms.phtml:265
+msgid "Portals"
+msgstr "Portals"
+
+#: application/zoolu/layouts/contacts-list.phtml:126
+msgid "back"
+msgstr "back"
+
+#~ msgid "members"
+#~ msgstr "MEMBERS"
+
+#~ msgid "Messages_per_page"
+#~ msgstr "Items per page"
+
+#~ msgid "Products"
+#~ msgstr "Products"

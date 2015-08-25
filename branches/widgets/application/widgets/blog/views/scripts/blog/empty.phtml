@@ -1,0 +1,24 @@
+        <?php if($this->pageurl != '') : ?>
+        <div class="pagepreviewcontainer">
+          <div class="pagepreviewleft"></div>
+          <div class="pagepreviewcenter white small"><a href="<?php echo $this->pageurl; ?>" target="_blank"><img src="/zoolu/images/icons/icon_page_preview.png"/>Seite testen</a></div>
+          <div class="pagepreviewright"></div>
+          <div class="clear"></div>
+        </div>
+        <?php endif; ?>
+        <?php if($this->languageOptions != '') : ?>
+        <div class="pagelanguagecontainer">
+          <select id="selectLanguageId" onchange="myForm.changeLanguage(this.value); return false;">
+            <?php echo $this->languageOptions; ?>
+          </select>
+        </div>
+        <?php endif; ?>
+        <div class="formtitle"><?php echo $this->formtitle; ?></div>
+        <?php echo $this->form; ?>
+        <script type="text/javascript">//<![CDATA[
+          myForm.blnShowFormAlert = <?php echo (($this->blnShowFormAlert == true) ? 'true' : 'false') ?>;
+          myForm.selectNavigationItemNow = <?php echo (($this->selectNavigationItemNow && $this->selectNavigationItemNow == true) ? 'true' : 'false') ?>;
+          <?php if($this->itemId): ?>myNavigation.itemId = '<?php echo $this->itemId ?>';<?php endif; ?>
+          myPage.isStartPage = <?php echo (($this->blnIsStartPage == true) ? 'true' : 'false') ?>;
+        //]]>
+        </script>

@@ -1,0 +1,14 @@
+The following folders have to be created manually:
+
+/tmp
+/tmp/cache
+/tmp/cache/gen_forms
+/tmp/cache/pages
+/tmp/cache/min
+/tmp/cache/tables
+/tmp/search_index
+/tmp/search_index/pages
+/tmp/sessions
+/logs
+
+Your webserver-user must have write-permissions on these folders.

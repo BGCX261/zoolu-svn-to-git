@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+/* @group tagcloud */
+
+.tagcloud{
+  padding:0px 0px 0px 0px;	
+   margin:0px 0px 0px 0px; 
+  text-align: justify;  
+}
+
+.tagcloud a{
+  padding:0px 2px 0px 2px;
+  margin:0px 0px 0px 0px;  
+  /*white-space: nowrap;*/
+}
+
+.tagcloud a.selectedtag{
+  background-color: #179FC0;
+  color: #fff;
+}
+
+/* @end */
+
+/* @group tags edit */
+
+.tagswrapper{
+}
+
+.tagswrapper .editinput{
+}
+
+.tagswrapper .editinput input{
+}
+
+.tagswrapper .mostused{
+  text-align: justify;  
+}
+
+.tagswrapper .mostused .mostusedcontainer{
+	padding:0px;
+}
+
+.tagswrapper .mostused .mostusedcontainer a{
+  margin:0px 5px 0px 0px;
+  padding:2px;  
+  line-height: 22px;  
+}
+
+.tagswrapper .mostused .mostusedcontainer a.selectedtag{
+  background-color: #FFD300;
+  color: #000;
+}
+
+/* @end */

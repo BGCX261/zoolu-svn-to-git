@@ -1,0 +1,24 @@
+<?php
+  require_once (dirname(__FILE__).'/../../helpers/ViewHelper.php');
+  $objHelper = new ViewHelper();
+?>
+<div class="mediacontainer">
+  <div class="mediaicon">
+    <?php if(strpos($this->mimeType, 'image/') !== false) : ?>
+      <img src="/website/uploads/images/icon32/<?php echo $this->fileFileId; ?>.<?php echo $this->fileExtension; ?>" width="32" height="32"/>
+    <?php else : ?>
+      <img src="<?php echo $objHelper->getDocIcon($this->fileExtension, 32); ?>" width="32" height="32"/>
+    <?php endif; ?>
+  </div>
+  <div class="mediainfos">
+    <div class="mediainfotitle"><input id="FileTitle<?php echo $this->fileId; ?>|||<?php echo $this->languageId; ?>" name="FileTitle<?php echo $this->fileId; ?>|||<?php echo $this->languageId; ?>" type="text" value="<?php echo $this->fileTitle; ?>"/></div>
+    <div class="mediainfodescription"><textarea onfocus="myMedia.setFocusTextarea(this.id); return false;" id="FileDescription<?php echo $this->fileId; ?>|||<?php echo $this->languageId; ?>" name="FileDescription<?php echo $this->fileId; ?>|||<?php echo $this->languageId; ?>"><?php echo $this->strDefaultDescription; ?></textarea>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  <script type="text/javascript">//<![CDATA[
+      myMedia.addUploadedFileId(<?php echo $this->fileId; ?>);
+  //]]>
+  </script>
+</div>
+<div class="clear"></div>

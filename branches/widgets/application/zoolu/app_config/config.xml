@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configdata>
+  
+  <!--
+  ***********************************************************
+  * config for online evnironment                           *
+  ***********************************************************
+  -->
+  <production>
+  
+  </production>
+  
+  <!--
+  ***********************************************************
+  * config for developement evnironment                     *
+  ***********************************************************
+  -->
+  <staging extends="production">
+  
+  </staging>
+  
+</configdata>

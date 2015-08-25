@@ -1,0 +1,26 @@
+<?php
+  require_once (dirname(__FILE__).'/../../helpers/PageHelper.php');
+  $objHelper = new PageHelper();
+?>
+                 <div class="formsubtitle">Letzte &Auml;nderungen</div>
+                 <table class="tablelist">
+                   <thead>
+                     <tr>
+                       <th class="topcornerleft"></th>
+                       <th class="topcheckbox"></th>
+                       <th class="toptitle">Titel</th>
+                       <th class="topauthor">Ge&auml;ndert von</th>
+                       <th class="topchanged">Ge&auml;ndert am</th>
+                       <th class="topcreated">Erstellt am</th>
+                       <th class="topcornerright"></th>
+                     </tr>
+                   </thead>
+                   <tbody>
+	                   <?php echo $objHelper->getDashboardListOutput($this->objPages);?>
+                   </tbody>
+                 </table>
+                 <div class="listfooter">
+						       <div class="listfootercornerleft"></div>
+						       <div class="listfootercornerright"></div>
+						     </div>
+						     <div class="spacer2"></div>

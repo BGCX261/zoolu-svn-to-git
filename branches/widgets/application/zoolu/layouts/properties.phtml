@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <title>ZOOLU - Einstellungen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Language" content="de" />
+    <meta name="language" content="de" />
+
+    <!-- ext.js css -->
+    <link rel="stylesheet" type="text/css" href="/zoolu/js_incs/ext.js/resources/css/ext-all.css?v=<?php echo $this->cssVersion; ?>" />
+    <link rel="stylesheet" type="text/css" href="/zoolu/js_incs/ext.js/resources/css/xtheme-gray.css?v=<?php echo $this->cssVersion; ?>" />
+
+    <!-- css -->
+    <link href="/zoolu/css/core_main.css?v=<?php echo $this->cssVersion; ?>" rel="stylesheet" />
+    <link href="/zoolu/css/core_navigation.css?v=<?php echo $this->cssVersion; ?>" rel="stylesheet" />
+    <link href="/zoolu/css/core_content.css?v=<?php echo $this->cssVersion; ?>" rel="stylesheet" />
+    <link href="/zoolu/css/core_font.css?v=<?php echo $this->cssVersion; ?>" rel="stylesheet" />
+
+    <script type="text/javascript" src="/zoolu/js_incs/prototype/prototype.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <script type="text/javascript" src="/zoolu/js_incs/script.aculous/scriptaculous.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <script type="text/javascript" src="/zoolu/js_incs/prototype/element.addons.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <!-- ext.js includes -->
+    <script type="text/javascript" src="/zoolu/js_incs/ext.js/ext-build.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <!-- define layout -->
+    <script type="text/javascript" src="/zoolu/js_incs/layout.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <!-- core -->
+    <script type="text/javascript" src="/zoolu/js_incs/core.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <!-- navigation -->
+    <script type="text/javascript" src="/zoolu/js_incs/navigation.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <script type="text/javascript" src="/zoolu/js_incs/navigation.properties.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <!-- form -->
+    <script type="text/javascript" src="/zoolu/js_incs/form.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <script type="text/javascript" src="/zoolu/js_incs/form.properties.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <!-- overlay -->
+    <script type="text/javascript" src="/zoolu/js_incs/overlay.js?v=<?php echo $this->jsVersion; ?>"></script>
+    <!-- TinyMCE Texteditor -->
+    <script type="text/javascript" src="/zoolu/tinymce/jscripts/tiny_mce/tiny_mce.js?v=<?php echo $this->jsVersion; ?>"></script>
+    
+    <script type="text/javascript">//<![CDATA[
+      var myCore = new Massiveart.Core();
+      var myNavigation = new Massiveart.Navigation.Properties();
+      var myForm = new Massiveart.Form.Properties();
+      var myOverlay = new Massiveart.Overlay();
+      
+      document.observe('dom:loaded', function() { 
+        myNavigation.initPortalHover();
+        myNavigation.topNaviTitle = 'Einstellungen';
+        myNavigation.module = <?php echo $this->module; ?>;
+      }); 
+                
+    //]]>
+    </script>    
+
+  </head>
+  <body id="myBody">
+
+    <!-- navigation top -->
+    <div id="navigation-top">
+      
+      <div id="top">
+        
+        <div class="toplogo">
+          <a href="/zoolu">
+            <img src="/zoolu/images/main/logo_zoolu_small.png" width="69" height="17" alt="ZOOLU"/>
+          </a>
+        </div>
+        <div class="topright">
+          <div class="faqtitle"><a href="#">Fehler melden</a> | <a href="#">Hilfe &amp; FAQ</a></div>
+          <div class="faqicon"><img src="/zoolu/images/icons/icon_help.png" width="16" height="16"/></div>
+          <div class="clear"></div>
+        </div>
+        
+        <div class="clear"></div>        
+      </div>  <!-- END top -->
+      
+      <?php echo $this->layout()->userinfo; ?>
+      
+      <!-- 
+      <div id="navtopleft">
+        <img id="navtopleftimg" width="5" height="40" src="/zoolu/images/main/bg_navigation_left.png"/>
+      </div>
+       -->
+       
+      <div id="navtopleftclient">
+        <img id="navtopleftimgclient" width="42" height="40" src="/zoolu/images/zoolu_client_logo.png"/>
+      </div>
+      
+      <div id="navtopwrapper">
+        <div id="navtopinner">
+          <div class="navtop">
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/cms'">PORTALE</div>
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div>
+          <div class="navtop">
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/media'">MEDIEN</div>
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div>
+          <!--<div class="navtop">
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/product'">PRODUKTE</div>
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div> -->
+          <div class="navtopinnerright">
+            <div class="navtopcorner_on"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink_on" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/properties'">Einstellungen</div>
+            <div class="navtopcorner_on"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div id="navtopbreadcrumb" style="display:none;"></div>
+      </div>
+      
+      <div id="navtopright">
+        <img id="navtoprightimg" width="5" height="40" src="/zoolu/images/main/bg_navigation_right.png"/>
+      </div>
+
+    </div> 
+    <!-- END navigation top -->
+
+    <?php echo $this->layout()->navigation; ?>
+
+    <!-- content -->
+    <div id="content">
+        
+      <!-- content edit -->
+      <div id="genFormContainer" class="contentedit" style="display:none;">
+      </div>
+        
+      <!-- content function widget -->
+      <div id="genFormSaveContainer" class="contentfunction" style="display:none;">
+
+      <!-- widget: save, delete, infos, ... -->
+      <div class="widgetfunctions">
+        <div class="widget224content">
+          <div class="widgetcontenttop">               
+                
+            <!-- alerts for saving, editing, deleting, ... -->
+            <div id="divFormSaveLoader" class="alertsave" style="display:none;">
+              <div class="alertsaveloader white"><img src="/zoolu/images/main/loader_save.gif" /><a href="#" onclick="myForm.cancleFormSaveLoader(); return false;" style="color:#fff;">Abbrechen</a></div>
+            </div>                
+            <div id="divFormSaveSucces" class="alertsavesucces" style="display:none;">Gespeichert!</div>
+            <div id="divFormSaveError" class="alertsaveerror" style="display:none;">Speichern nicht möglich!</div>
+            <div id="divFormDeleteSucces" class="alertdeletesucces" style="display:none;">Gel&ouml;scht!</div>
+                
+            <!-- save button -->
+            <div id="buttonsave" onclick="myForm.save();">
+              <div class="button25leftOn"></div>
+              <div class="button25centerOn">
+                <img class="iconsave" src="/zoolu/images/icons/icon_save_black.png" width="13" height="13"/>
+                <div>Speichern</div>
+              </div>
+              <div class="button25rightOn"></div>
+              <div class="clear"></div>
+            </div>
+
+            <!-- delete button -->
+            <div id="buttondelete" onclick="myForm.deleteElement();" style="display:none;">
+              <div class="button25leftOff"></div>
+              <div class="button25centerOff">
+                <img class="icondelete" src="/zoolu/images/icons/icon_delete_white.png" width="11" height="14"/>
+                <div>L&ouml;schen</div>
+              </div>
+              <div class="button25rightOff"></div>
+              <div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+          </div>
+
+          <div class="widgetcontentmain" id="divWidgetMetaInfos">                
+          </div>
+              
+          </div>
+        </div>
+      </div>        
+    </div> <!-- END content -->
+
+    <!-- overlay transparent-->
+    <div id="overlayTrans" class="overlaytrans" style="display:none;"></div>    
+    <!-- overlay black 75% -->
+    <div id="overlayBlack75" class="overlayblack75" style="display:none;"></div>
+    
+    <!-- overlay for generated content -->
+    <div id="overlayGenContentWrapper" class="overlaycontentwrapper" style="display:none;">
+      <table>
+        <thead>
+          <tr>
+            <td class="cornertopleft"></td>
+            <td class="topcenter"></td>
+            <td class="cornertopright"></td>
+          </tr>
+          <tr>
+            <td class="headerleft"></td>
+            <td class="headercenter handle">
+	            <div class="headerclose" onclick="$('overlayGenContentWrapper').hide(); return false;"></div>
+	            <div class="clear"></div>
+            </td>
+            <td class="headerright"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="contentleft"></td>
+            <td class="contentcenter">
+              <div id="overlayGenContent" class="overlaycontent">
+              </div>
+            </td>
+            <td class="contentright"></td>
+          </tr>
+          <tr>
+            <td class="cornerbottomleft"></td>
+            <td class="bottomcenter"></td>
+            <td class="cornerbottomright"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <script type="text/javascript">//<![CDATA[
+      new Draggable('overlayGenContentWrapper', {handle: 'handle', scroll: window });       
+    //]]>
+    </script>
+
+  </body>
+</html>

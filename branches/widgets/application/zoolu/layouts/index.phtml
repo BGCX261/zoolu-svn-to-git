@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <title>ZOOLU</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Language" content="de" />
+    <meta name="language" content="de" />
+
+    <!-- extjs css -->
+    <link rel="stylesheet" type="text/css" href="/zoolu/js_incs/ext.js/resources/css/ext-all.css?v=<?php echo $this->cssVersion; ?>" />
+    <link rel="stylesheet" type="text/css" href="/zoolu/js_incs/ext.js/resources/css/xtheme-gray.css?v=<?php echo $this->cssVersion; ?>" />
+
+    <!-- css -->
+    <link href="/zoolu/css/core_main.css?v=<?php echo $this->cssVersion; ?>" rel="stylesheet" />
+    <link href="/zoolu/css/core_navigation.css?v=<?php echo $this->cssVersion; ?>" rel="stylesheet" />
+    <link href="/zoolu/css/core_font.css?v=<?php echo $this->cssVersion; ?>" rel="stylesheet" />
+
+  </head>
+  <body id="myBody">
+
+    <!-- navigation top -->
+    <div id="navigation-top">
+      
+      <div id="top">
+        
+        <div class="toplogo">
+          <a href="/zoolu">
+            <img src="/zoolu/images/main/logo_zoolu_small.png" width="69" height="17" alt="ZOOLU"/>
+          </a>
+        </div>
+        <div class="topright">
+          <div class="faqtitle"><a href="#">Fehler melden</a> | <a href="#">Hilfe &amp; FAQ</a></div>
+          <div class="faqicon"><img src="/zoolu/images/icons/icon_help.png" width="16" height="16"/></div>
+          <div class="clear"></div>
+        </div>
+        
+        <div class="clear"></div>        
+      </div>  <!-- END top -->
+      
+      <?php echo $this->layout()->userinfo; ?>
+
+      <!-- 
+      <div id="navtopleft">
+        <img id="navtopleftimg" width="5" height="40" src="/zoolu/images/main/bg_navigation_left.png"/>
+      </div>
+       -->
+       
+      <div id="navtopleftclient">
+        <img id="navtopleftimgclient" width="42" height="40" src="/zoolu/images/zoolu_client_logo.png"/>
+      </div>
+      
+      <div id="navtopwrapper">
+        <div id="navtopinner">
+          <div class="navtop">
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/cms'">PORTALE</div>
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div>
+          <div class="navtop">
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/media'">MEDIEN</div>
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div>
+          <!--<div class="navtop">
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/product'">PRODUKTE</div>
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div> -->
+          <div class="navtopinnerright">
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_left.png"/></div>
+            <div class="navtoplink" onmouseover="this.style.cursor='pointer';" onclick="location.href='/zoolu/properties'">Einstellungen</div>
+            <div class="navtopcorner"><img width="5" height="30" src="/zoolu/images/main/bg_navelement_right.png"/></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div id="navtopbreadcrumb" style="display:none;">Portal 1 &raquo; Documents &raquo; Test</div>
+      </div>
+      
+      <div id="navtopright">
+        <img id="navtoprightimg" width="5" height="40" src="/zoolu/images/main/bg_navigation_right.png"/>
+      </div>
+
+    </div> 
+    <!-- END navigation top -->
+
+  </body>
+</html>

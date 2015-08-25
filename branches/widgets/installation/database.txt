@@ -1,0 +1,4 @@
+At the moment there are two dumps, one with the data (dump-with-insert), and another witout the data.
+Some of the data is required, you should consider this, when using the variant without the data.
+
+You can set the data for the database-connection in /sys_config/config.xml, within the database-tag.

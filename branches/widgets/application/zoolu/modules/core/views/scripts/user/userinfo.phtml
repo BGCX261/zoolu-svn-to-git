@@ -1,0 +1,19 @@
+      <div id="userwrapper">
+        <div class="usercorner">
+          <img width="240" height="4" src="/zoolu/images/main/bg_smallsidebox_top.png"/>
+        </div>
+        <div id="usercontent">
+          <div id="usercontenticon">
+            <img width="25" height="25" src="/zoolu/images/main/user_default.jpg"/>
+          </div>
+          <div id="usercontentuser">
+            <div class="headerusername"><?php echo htmlentities($this->user->fname.' '.$this->user->sname, ENT_COMPAT); ?></div>
+            <div class="headerdepartement"><a href="#">Meine Einstellungen,</a> <a href="/zoolu/core/user/logout">Log Out</a></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="usercorner">
+          <img width="240" height="4" src="/zoolu/images/main/bg_smallsidebox_bottom.png"/>
+        </div>
+        <div class="clear"></div>
+      </div>

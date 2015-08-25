@@ -1,0 +1,48 @@
+
+/**
+ * CSS for Blog Widget
+ * @author Florian Mathis <flo@massiveart.com>
+ * @version 1.0
+ */
+ 
+#blogWidgetCommentForm input {
+	width: 150px;
+	margin-bottom: 5px;
+}
+#blogWidgetCommentForm textarea {
+	width: 400px;
+	height: 100px;
+}
+#blogWidgetCommentForm label {
+	width: 50px;
+	float: left;
+}
+#blogWidgetCommentForm br {
+	clear: both;
+}
+#blogWidgetCommentForm input[type=submit] {
+	width: 130px;
+}
+
+.blogWidgetTag1 {
+	font-size: 12px;
+}
+.blogWidgetTag2 {
+	font-size: 14px;
+}
+.blogWidgetTag3 {
+	font-size: 15px;
+}
+.blogWidgetTag4 {
+	font-size: 18px;
+}
+.blogWidgetTag5 {
+	font-size: 20px;
+}
+.blogWidgetTag6 {
+	font-size: 23px;
+}
+
+.widgetBlogRssFeed {
+	margin-top: 20px;
+}
